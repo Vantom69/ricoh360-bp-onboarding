@@ -1,0 +1,91 @@
+/**
+ * RICOH360 Business Pack - Brand Theme
+ * Colors from brand_style.md: #3532CA (Blue), #2A303C (Black), #544EFF (Accent)
+ */
+
+:root {
+  /* Brand colors */
+  --vp-c-brand-1: #3532CA;
+  --vp-c-brand-2: #544EFF;
+  --vp-c-brand-3: #2A28A0;
+  --vp-c-brand-soft: rgba(53, 50, 202, 0.1);
+
+  /* Text */
+  --vp-c-text-1: #2A303C;
+  --vp-c-text-2: rgba(42, 48, 60, 0.78);
+  --vp-c-text-3: rgba(42, 48, 60, 0.56);
+
+  /* Button brand */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #3532CA;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #544EFF;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #2A28A0;
+
+  /* Home hero */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #3532CA 0%, #544EFF 100%);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(53, 50, 202, 0.2) 0%, rgba(84, 78, 255, 0.2) 100%);
+  --vp-home-hero-image-filter: blur(44px);
+
+  /* Font */
+  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+/* Dark mode overrides */
+.dark {
+  --vp-c-brand-1: #544EFF;
+  --vp-c-brand-2: #7A75FF;
+  --vp-c-brand-3: #3532CA;
+  --vp-c-brand-soft: rgba(84, 78, 255, 0.15);
+}
+
+/* Tier badges */
+.tier-badge {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 600;
+  padding: 0.15em 0.5em;
+  border-radius: 4px;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+
+.tier-badge-free {
+  background-color: rgba(16, 185, 129, 0.12);
+  color: #059669;
+}
+
+.tier-badge-premium {
+  background-color: rgba(53, 50, 202, 0.12);
+  color: #3532CA;
+}
+
+.dark .tier-badge-free {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #34D399;
+}
+
+.dark .tier-badge-premium {
+  background-color: rgba(84, 78, 255, 0.2);
+  color: #7A75FF;
+}
+
+/* Custom container styling for "Go further" sections */
+.vp-doc blockquote {
+  border-left-color: var(--vp-c-brand-1);
+}
+
+/* Footer styling */
+.VPFooter {
+  border-top-color: var(--vp-c-brand-soft) !important;
+}
+
+/* Nav logo text weight */
+.VPNavBarTitle .title {
+  font-weight: 700;
+}
