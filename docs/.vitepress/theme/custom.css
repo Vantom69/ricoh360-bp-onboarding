@@ -1,91 +1,154 @@
 /**
- * RICOH360 Business Pack - Brand Theme
- * Colors from brand_style.md: #3532CA (Blue), #2A303C (Black), #544EFF (Accent)
+ * RICOH360 Business Pack — V2 Theme
+ * Issu de la charte graphique (Charte graphique/Context5.pdf + Context6.pdf)
+ * Brand : #3532CA / #544EFF / #2A303C / Inter
  */
 
 :root {
-  /* Brand colors */
-  --vp-c-brand-1: #3532CA;
-  --vp-c-brand-2: #544EFF;
-  --vp-c-brand-3: #2A28A0;
+  /* ============================================
+     Palette RICOH360 (charte officielle)
+     ============================================ */
+
+  /* Brand blues */
+  --ricoh-blue-1: #3532CA;
+  --ricoh-blue-2: #544EFF;
+  --ricoh-blue-3: #2A28A0;
+  --ricoh-blue-light-1: #AEC6FF;
+  --ricoh-blue-light-2: #D6D5FB;
+  --ricoh-blue-light-3: #F3F2FF;
+  --ricoh-blue-light-4: #F6FAFF;
+
+  /* Black */
+  --ricoh-black: #2A303C;
+
+  /* Neutral grays (9 niveaux, sombre → clair) */
+  --ricoh-gray-1: #3D4454;
+  --ricoh-gray-2: #4D5769;
+  --ricoh-gray-3: #5E6A80;
+  --ricoh-gray-4: #6C7991;
+  --ricoh-gray-5: #828CA2;
+  --ricoh-gray-6: #97A1B4;
+  --ricoh-gray-7: #B5BCCA;
+  --ricoh-gray-8: #D1D7E1;
+  --ricoh-gray-9: #EDEEF5;
+
+  /* ============================================
+     VitePress brand overrides (link palette → vp vars)
+     ============================================ */
+
+  --vp-c-brand-1: var(--ricoh-blue-1);
+  --vp-c-brand-2: var(--ricoh-blue-2);
+  --vp-c-brand-3: var(--ricoh-blue-3);
   --vp-c-brand-soft: rgba(53, 50, 202, 0.1);
 
-  /* Text */
-  --vp-c-text-1: #2A303C;
+  --vp-c-text-1: var(--ricoh-black);
   --vp-c-text-2: rgba(42, 48, 60, 0.78);
   --vp-c-text-3: rgba(42, 48, 60, 0.56);
 
-  /* Button brand */
+  /* Boutons */
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: #ffffff;
-  --vp-button-brand-bg: #3532CA;
+  --vp-button-brand-bg: var(--ricoh-blue-1);
   --vp-button-brand-hover-border: transparent;
   --vp-button-brand-hover-text: #ffffff;
-  --vp-button-brand-hover-bg: #544EFF;
+  --vp-button-brand-hover-bg: var(--ricoh-blue-2);
   --vp-button-brand-active-border: transparent;
   --vp-button-brand-active-text: #ffffff;
-  --vp-button-brand-active-bg: #2A28A0;
+  --vp-button-brand-active-bg: var(--ricoh-blue-3);
 
-  /* Home hero */
+  /* Hero home */
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(135deg, #3532CA 0%, #544EFF 100%);
+  --vp-home-hero-name-background: linear-gradient(135deg, var(--ricoh-blue-1) 0%, var(--ricoh-blue-2) 100%);
   --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(53, 50, 202, 0.2) 0%, rgba(84, 78, 255, 0.2) 100%);
   --vp-home-hero-image-filter: blur(44px);
 
   /* Font */
-  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --vp-font-family-base: 'Inter', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* ============================================
+     Design tokens V2 — spacing, radius, shadow
+     ============================================ */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+
+  --shadow-sm: 0 1px 2px rgba(42, 48, 60, 0.06), 0 1px 3px rgba(42, 48, 60, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(42, 48, 60, 0.08), 0 2px 4px -1px rgba(42, 48, 60, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(42, 48, 60, 0.10), 0 4px 6px -2px rgba(42, 48, 60, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(42, 48, 60, 0.10), 0 10px 10px -5px rgba(42, 48, 60, 0.04);
+  --shadow-brand: 0 10px 25px -5px rgba(53, 50, 202, 0.25), 0 8px 10px -6px rgba(84, 78, 255, 0.20);
 }
 
-/* Dark mode overrides */
+/* ============================================
+   Dark mode overrides
+   ============================================ */
 .dark {
-  --vp-c-brand-1: #544EFF;
+  --vp-c-brand-1: var(--ricoh-blue-2);
   --vp-c-brand-2: #7A75FF;
-  --vp-c-brand-3: #3532CA;
+  --vp-c-brand-3: var(--ricoh-blue-1);
   --vp-c-brand-soft: rgba(84, 78, 255, 0.15);
 }
 
-/* Tier badges */
-.tier-badge {
-  display: inline-block;
-  font-size: 0.7em;
+/* ============================================
+   Typographie selon charte
+   H1 48 / H2 30 / H3 24 / H4 20 / H5 18 / H6 16
+   ============================================ */
+.vp-doc h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.vp-doc h2 {
+  font-size: 28px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
   font-weight: 600;
-  padding: 0.15em 0.5em;
-  border-radius: 4px;
-  vertical-align: middle;
-  letter-spacing: 0.02em;
+  border-top: none;
+  padding-top: var(--space-8);
+  margin-top: var(--space-8);
+}
+.vp-doc h3 {
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.vp-doc h4 {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
 }
 
-.tier-badge-free {
-  background-color: rgba(16, 185, 129, 0.12);
-  color: #059669;
+@media (min-width: 768px) {
+  .vp-doc h1 { font-size: 48px; }
+  .vp-doc h2 { font-size: 30px; }
+  .vp-doc h3 { font-size: 24px; }
+  .vp-doc h4 { font-size: 20px; }
 }
 
-.tier-badge-premium {
-  background-color: rgba(53, 50, 202, 0.12);
-  color: #3532CA;
-}
-
-.dark .tier-badge-free {
-  background-color: rgba(16, 185, 129, 0.2);
-  color: #34D399;
-}
-
-.dark .tier-badge-premium {
-  background-color: rgba(84, 78, 255, 0.2);
-  color: #7A75FF;
-}
-
-/* Custom container styling for "Go further" sections */
-.vp-doc blockquote {
-  border-left-color: var(--vp-c-brand-1);
-}
-
-/* Footer styling */
+/* ============================================
+   Footer
+   ============================================ */
 .VPFooter {
   border-top-color: var(--vp-c-brand-soft) !important;
 }
 
-/* Nav logo text weight */
 .VPNavBarTitle .title {
   font-weight: 700;
+}
+
+.vp-doc blockquote {
+  border-left-color: var(--vp-c-brand-1);
 }

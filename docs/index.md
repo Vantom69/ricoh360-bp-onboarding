@@ -1,16 +1,17 @@
 ---
 layout: home
-title: RICOH360 Business Pack - Knowledge Base
+title: RICOH360 Business Pack — Onboarding officiel
+titleTemplate: false
 
 hero:
   name: RICOH360 Business Pack
-  text: Knowledge Base
-  tagline: Select your language to get started.
+  text: Votre onboarding officiel
+  tagline: Démarrez avec votre caméra et la plateforme RICOH360 — étape par étape, à votre rythme.
   actions:
     - theme: brand
-      text: English
-      link: /en/
+      text: Commencer
+      link: /fr/01-bienvenue/
     - theme: alt
-      text: Francais
-      link: /fr/
+      text: Aide et FAQ
+      link: /fr/12-aide-depannage/
 ---

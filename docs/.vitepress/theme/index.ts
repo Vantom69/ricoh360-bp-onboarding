@@ -1,6 +1,33 @@
 import DefaultTheme from 'vitepress/theme'
+import type { Theme } from 'vitepress'
 import './custom.css'
+import './components/v2.css'
+
+import JourneyStep from './components/JourneyStep.vue'
+import CameraSelector from './components/CameraSelector.vue'
+import VideoPlaceholder from './components/VideoPlaceholder.vue'
+import ImagePlaceholder from './components/ImagePlaceholder.vue'
+import Accordion from './components/Accordion.vue'
+import Card from './components/Card.vue'
+import CardGrid from './components/CardGrid.vue'
+import QRCodePair from './components/QRCodePair.vue'
+import CloudFlowDiagram from './components/CloudFlowDiagram.vue'
+import FAQItem from './components/FAQItem.vue'
+import SupportLink from './components/SupportLink.vue'
 
 export default {
   extends: DefaultTheme,
-}
+  enhanceApp({ app }) {
+    app.component('JourneyStep', JourneyStep)
+    app.component('CameraSelector', CameraSelector)
+    app.component('VideoPlaceholder', VideoPlaceholder)
+    app.component('ImagePlaceholder', ImagePlaceholder)
+    app.component('Accordion', Accordion)
+    app.component('Card', Card)
+    app.component('CardGrid', CardGrid)
+    app.component('QRCodePair', QRCodePair)
+    app.component('CloudFlowDiagram', CloudFlowDiagram)
+    app.component('FAQItem', FAQItem)
+    app.component('SupportLink', SupportLink)
+  },
+} satisfies Theme

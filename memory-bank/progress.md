@@ -22,7 +22,8 @@
 - [x] Task V1 sheet created with live URLs
 
 ## In progress
-- [ ] Team kickoff presentation and validation
+- [ ] Laura prend le lead — kickoff doc Notion envoyé, retour Slack fait le 2026-05-12, réunion d'alignement le 2026-05-13
+- [ ] Scope élargi : ajout Business Pack Type S + chantier interne (process)
 - [ ] FR translation review by Thomas
 
 ## Backlog (V2) - See GitHub Issues
@@ -45,3 +46,4 @@
 | Date | Focus | Key outcome |
 |------|-------|-------------|
 | 2026-04-14 | V1 full build | Site live at vantom69.github.io/ricoh360-bp-onboarding |
+| 2026-05-12 | Kickoff Laura | Retour Slack envoyé sur kickoff doc Laura, alignement prévu 2026-05-13. Scope élargi BP Type S + chantier interne acté. Rôles light validés. |
