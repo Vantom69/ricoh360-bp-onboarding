@@ -99,6 +99,31 @@
   --vp-c-brand-2: #7A75FF;
   --vp-c-brand-3: var(--ricoh-blue-1);
   --vp-c-brand-soft: rgba(84, 78, 255, 0.15);
+
+  /* Couleurs de texte en dark — fixe titres h1/h2/h3/h4 et corps */
+  --vp-c-text-1: var(--ricoh-gray-9);
+  --vp-c-text-2: rgba(237, 238, 245, 0.78);
+  --vp-c-text-3: rgba(237, 238, 245, 0.56);
+}
+
+/* Tables markdown en dark (FAQ dépannage notamment) */
+.dark .vp-doc table {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.dark .vp-doc thead {
+  background: rgba(84, 78, 255, 0.08);
+}
+.dark .vp-doc th {
+  color: var(--ricoh-gray-9);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.dark .vp-doc td {
+  color: var(--ricoh-gray-8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.dark .vp-doc tr:nth-child(2n) {
+  background: rgba(255, 255, 255, 0.02);
 }
 
 /* ============================================

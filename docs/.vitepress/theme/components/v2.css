@@ -683,3 +683,50 @@
 .dark .support-link:hover {
   background: rgba(84, 78, 255, 0.2);
 }
+
+/* ============================================
+   Dark mode — surcharges sous-éléments oubliés
+   (chevrons, CTA, labels, captions)
+   ============================================ */
+.dark .camera-card__cta {
+  color: var(--ricoh-blue-light-1);
+}
+.dark .camera-selector__hint {
+  color: var(--ricoh-gray-6);
+}
+.dark .journey-step__outcome-label {
+  color: var(--ricoh-blue-light-1);
+}
+.dark .media__placeholder-label {
+  color: var(--ricoh-blue-light-2);
+}
+.dark .media__placeholder-id {
+  color: var(--ricoh-gray-6);
+}
+.dark .media__caption {
+  color: var(--ricoh-gray-7);
+}
+.dark .qr-pair__placeholder {
+  color: var(--ricoh-gray-7);
+}
+.dark .qr-pair__placeholder-label {
+  color: var(--ricoh-blue-light-1);
+}
+.dark .qr-pair__placeholder small {
+  color: var(--ricoh-gray-6);
+}
+.dark .cloud-flow__arrow {
+  color: var(--ricoh-blue-light-1);
+}
+.dark .cloud-flow__caption {
+  color: var(--ricoh-gray-7);
+}
+.dark .faq-item__chevron {
+  color: var(--ricoh-gray-6);
+}
+.dark .accordion__chevron {
+  color: var(--ricoh-gray-6);
+}
+.dark .card__cta {
+  color: var(--ricoh-blue-light-1);
+}
