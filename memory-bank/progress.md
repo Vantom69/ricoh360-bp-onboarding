@@ -48,6 +48,11 @@
 - [x] Branche v2-refonte poussée sur origin (sauvegarde repo principal)
 - [x] Preview live HTTP 200, 3 commits + 1 commit slack-message-v2.2
 
+## V2.3 — Retours Laura ponctuels (2026-06-10)
+- [x] Bloc « Le RICOH360 Business Pack en bref » ajouté en page 01-bienvenue (intro de l'offre par abonnement, location caméra, licences App+WebApp, Ricoh Care)
+- [x] Réponse FAQ Ricoh Care reformulée en page 12-aide-depannage (« Oui, inclus » + détail couverture)
+- [x] 1 commit ea65fa0 push origin + preview, deploy vert HTTP 200
+
 ## In progress
 - [ ] Thomas transmet le message Slack v2.2 à Laura (docs-projet/slack-message-laura-v2.2.md)
 - [ ] Récupérer le retour final Laura sur V2.2
@@ -86,3 +91,4 @@
 | 2026-06-08 | Refonte V2 livrée | Brief Laura analysé, V2 squelette + contenu + composants + preview en ligne livrés. Tag v1.0 posé, branche v2-refonte + repo preview. 4 docs + message Slack pour Laura prêts à transmettre. |
 | 2026-06-09 | V2.1 | Retour Laura V1 traité : 25 médias intégrés (YouTube embed + HubSpot), 3 blocs FAQ dépannage ajoutés (allumage, LED A1, écran X), 7 URLs support réelles, grille de naturalisation FR + 3 pages témoins réécrites pour validation Laura. |
 | 2026-06-10 | V2.2 | Retour Thomas traité : mode nuit complet (custom.css + v2.css), retrait socialLinks GitHub (config.mts), naturalisation ton FR sur les 18 pages restantes. Laura validation ton OK. Branche v2-refonte poussée sur origin. Preview live HTTP 200. |
+| 2026-06-10 | V2.3 | Retours Laura ponctuels : (1) bloc explicatif Business Pack ajouté en bienvenue, (2) réponse FAQ Ricoh Care reformulée pour confirmer l'inclusion. 1 commit ea65fa0, push origin + preview, deploy vert. En attente du retour Laura sur V2.3. |

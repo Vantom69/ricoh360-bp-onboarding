@@ -1,6 +1,14 @@
 # Active Context
 
-## Last session: 2026-06-10 (V2.2)
+## Last session: 2026-06-10 (V2.3 — retours Laura ponctuels)
+
+### What was accomplished (V2.3)
+- **Page 01-bienvenue** (`ea65fa0`) : ajout d'un bloc « Le RICOH360 Business Pack en bref » après l'intro (avant les objectifs), qui présente l'offre — abonnement professionnel, location caméra RICOH THETA, licences App + WebApp, support Ricoh Care
+- **Page 12-aide-depannage, FAQ Ricoh Care** (`ea65fa0`) : réponse changée de « peut être inclus selon votre offre » à « Oui, inclus dans votre Business Pack » avec le détail de la couverture (support dédié, MAJ firmware, remplacement caméra)
+- 1 commit + push origin + preview (deploy vert HTTP 200 sur les 2 pages modifiées)
+- Aucun WIP non-commité
+
+## Previous session: 2026-06-10 (V2.2)
 
 ### What was accomplished (V2.2)
 - **Mode nuit complet** (`fe29c6c`) : ajout des `--vp-c-text-1/2/3` en `.dark` dans `custom.css` (fixe titres h1-h4 et corps), surcharges `.dark` sur les tables markdown VitePress, 14 surcharges sous-éléments dans `v2.css` (chevrons, CTA, labels, captions)
