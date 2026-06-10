@@ -9,6 +9,16 @@ Vous venez de recevoir votre Business Pack RICOH360 — bienvenue !
 
 Cet espace vous guide de la réception de votre pack jusqu'aux usages avancés. Avancez à votre rythme : vous pouvez revenir piocher dedans à tout moment.
 
+## Le RICOH360 Business Pack en bref
+
+Le RICOH360 Business Pack est une **offre par abonnement** conçue pour les professionnels. Il regroupe dans une formule unique les éléments essentiels pour utiliser RICOH360 au quotidien :
+
+- la **location** d'une caméra RICOH THETA ;
+- l'**accès aux licences** RICOH360 App et WebApp ;
+- le **support Ricoh Care**, avec une couverture de remplacement.
+
+Ce parcours vous guide pas à pas pour prendre en main votre équipement, configurer vos accès et utiliser la solution efficacement sur le terrain.
+
 ## Ce que vous allez apprendre
 
 <CardGrid cols="3">

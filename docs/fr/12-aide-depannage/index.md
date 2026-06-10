@@ -116,7 +116,7 @@ L'autonomie dépend de votre modèle et de votre usage. En moyenne, comptez entr
 
 <FAQItem question="Mon Business Pack inclut-il Ricoh Care ?">
 
-Ricoh Care peut être inclus selon votre offre. Pour vérifier la couverture exacte de votre pack, contactez votre référent commercial ou le support RICOH360.
+Oui. Ricoh Care est inclus dans votre RICOH360 Business Pack. Ce service vous donne accès à un support dédié, aux mises à jour firmware et à une couverture de remplacement de la caméra selon les conditions prévues. Il vous permet d'utiliser votre équipement RICOH THETA et la solution RICOH360 avec plus de sérénité au quotidien.
 
 </FAQItem>
 
