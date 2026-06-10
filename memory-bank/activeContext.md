@@ -1,87 +1,82 @@
 # Active Context
 
-## Last session: 2026-06-09 (reprise courte)
+## Last session: 2026-06-10 (V2.2)
 
-### What was accomplished (2026-06-09)
-- README mis à jour sur `main` (commit `8ab60b1`) : URLs V1 + V2 preview, stratégie de branches
-- README mis à jour sur `v2-refonte` (commit `d775168`) pour cohérence post-merge
-- Push preview repo synchronisé avec README à jour
+### What was accomplished (V2.2)
+- **Mode nuit complet** (`fe29c6c`) : ajout des `--vp-c-text-1/2/3` en `.dark` dans `custom.css` (fixe titres h1-h4 et corps), surcharges `.dark` sur les tables markdown VitePress, 14 surcharges sous-éléments dans `v2.css` (chevrons, CTA, labels, captions)
+- **Lien GitHub retiré** (`bd2b4aa`) : suppression du bloc `socialLinks` dans `config.mts` — site client-facing, plus de logo GitHub en haut à droite
+- **Ton FR naturalisé sur les 18 pages restantes** (`c0f8d39`) : application de la grille `docs-projet/grille-naturalisation-ton-fr.md` validée par Laura sur sections 02-A1, 03, 04, 05A/B, 06, 07, 08, 09A/B/C, 10A/B/C/D, 11A/B/C. Vocabulaire métier préservé strictement, contenu factuel inchangé
+- **Message Slack v2.2** (`e3258a7`) : `docs-projet/slack-message-laura-v2.2.md` prêt à transmettre
+- **Branche `v2-refonte` poussée sur origin** : sauvegarde sur le repo principal (en plus du repo preview)
 
-## Previous session: 2026-06-08
+### Previous session: 2026-06-09 (V2.1)
+- V2.1 : phases A (médias + URLs support), B (3 nouveaux blocs FAQ), C (grille + 3 pages témoins), C.3 (push preview + Slack Laura)
+- 25 médias Laura intégrés (6 captures HubSpot + 19 vidéos YouTube via embed iframe automatique)
+- 7 URLs support `support.ricoh360.com` réelles substituées
+- Composant `VideoPlaceholder.vue` adapté pour détecter et embedder YouTube
 
-### What was accomplished
-- **V2 squelette + contenu complets** sur branche `v2-refonte`, preview en ligne
-- Tag `v1.0` posé sur main (V1 immuable préservée)
-- Repo preview créé : `Vantom69/ricoh360-bp-onboarding-v2-preview`
-- Preview live : **https://vantom69.github.io/ricoh360-bp-onboarding-v2-preview/**
-- 21 pages V2 FR rédigées selon brief Laura (architecture journey-based 12 sections)
-- 11 composants Vue personnalisés
-- Theme charte étendu (palette + tokens)
-- Audit alignement implémentation vs brief Laura → 2 écarts corrigés + 6 zones à valider Laura
-- 4 docs-projet pour Laura + message Slack prêt à envoyer
+### Previous session: 2026-06-08 (V2 initiale)
+- V2 squelette + contenu : 21 pages FR + 11 composants Vue + theme charte + audit alignement vs brief
 
-### Key decisions made
-- **Approche V2** : refonte en profondeur, pas évolution V1. Architecture journey-based remplace topic-based.
-- **Scope langue** : FR-only en première itération, EN après validation Laura (Phase 7)
-- **Hébergement preview** : repo séparé `ricoh360-bp-onboarding-v2-preview` (pure GitHub, gratuit, supprimable après merge)
-- **Base URL configurable** : env `VITEPRESS_BASE` détecte le repo, permet le multi-repo (production + preview) sans branchement
-- **Médias** : workflow placeholder dans le code, Laura livre selon procédure documentée (recommandation Option A : conversion .mov → .mp4 hébergé repo)
-- **Pages structure** : conserver les 12 sections du brief en numérotation, sous-sections nommées (9A/9B/9C, 10A-D, 11A-C, 2A/2B, 5A/5B)
-
-### Current state
-- V2 live sur preview, prête pour validation Laura
-- Aucun push sur main repo (origin) — V1 reste live à l'URL d'origine inchangée
-- Branche `v2-refonte` commitée (`98df5d2`), local + sur preview/main
-- 4 docs-projet livrés + message Slack prêt
+### Current state (fin V2.2)
+- V2.2 preview LIVE : **https://vantom69.github.io/ricoh360-bp-onboarding-v2-preview/** (HTTP 200)
+- V1 main inchangée, toujours live à URL d'origine
+- Branche `v2-refonte` synchronisée : local + origin + preview
+- 5 commits propres pour V2.2 sur v2-refonte
+- Aucun WIP non-commité
+- 5 documents projet pour Laura prêts dans `docs-projet/` (notes-pour-laura, audit-implementation-vs-brief, media-procedure-laura, media-mapping, grille-naturalisation-ton-fr) + 2 messages Slack (slack-message-laura-v2.1, slack-message-laura-v2.2)
 
 ### What to do next session
-1. **Vérifier le retour Laura** sur la preview (questions, désaccords, validations)
-2. **Réunion de validation** (30-45 min prévue) avec les 6 questions structurantes
-3. **Appliquer les corrections** issues du retour Laura sur `v2-refonte`
-4. **Phase 5 fin** : itérer preview jusqu'à validation finale Laura
-5. **Phase 6** : merger v2-refonte → main, tag v2.0, suppression du repo preview
-6. **Phase 7** : démarrer la traduction EN
+1. Thomas a transmis le message Slack v2.2 à Laura (ou va le faire)
+2. Récupérer le **retour final Laura** sur la V2.2 complète
+3. Traiter les corrections éventuelles
+4. **Ouvrir les 6 questions structurantes** restées en suspens (audit V2.1) :
+   - Fusion section 1 (objectifs + outcomes) ou 2 blocs distincts ?
+   - Persistance du choix caméra et adaptation auto du parcours ?
+   - Pages 2A/5A : encart visuel rappelant le modèle sélectionné ?
+   - Mention "premium Business Pack" sur 10C/10D ?
+   - Convention de nommage des albums (officielle Ricoh Futures ?)
+   - Composant `NextStep` stylisé vs simple lien markdown ?
+5. Récupérer l'**URL support « améliorer la qualité de capture »** que Laura n'a pas fournie
+6. Si Laura valide : **Phase E** — merge `v2-refonte` → `main`, tag `v2.0`, suppression du repo preview, MAJ README post-merge
 
-### Architecture V2 (12 sections journey-based)
+### Architecture V2 (12 sections journey-based) — inchangée
 ```
 docs/fr/
   01-bienvenue/index.md           # Welcome + CameraSelector
-  02-installer-camera/
-    theta-x.md                    # Setup THETA X
-    theta-a1.md                   # Setup THETA A1
-  03-installer-app/index.md       # Install app mobile + QR codes
+  02-installer-camera/{theta-x, theta-a1}.md
+  03-installer-app/index.md       # QR codes (placeholders)
   04-compte-ricoh360/index.md     # Identifiants partagés mobile + web
-  05-connecter-camera/
-    theta-x.md                    # Pairing THETA X
-    theta-a1.md                   # Pairing THETA A1
-  06-premiere-capture/index.md    # Première capture 360°
+  05-connecter-camera/{theta-x, theta-a1}.md
+  06-premiere-capture/index.md
   07-comprendre-cloud/index.md    # CloudFlowDiagram
-  08-retrouver-partager/index.md  # Trouver + partager
-  09-organiser/
-    albums.md projets.md plans.md
-  10-exploiter/
-    annotations.md comparer.md super-resolution.md flouter.md
-  11-bonnes-pratiques/
-    construction.md inspection.md facility-management.md
-  12-aide-depannage/index.md      # FAQ + SupportLinks
+  08-retrouver-partager/index.md
+  09-organiser/{albums, projets, plans}.md
+  10-exploiter/{annotations, comparer, super-resolution, flouter}.md
+  11-bonnes-pratiques/{construction, inspection, facility-management}.md
+  12-aide-depannage/index.md      # FAQ + SupportLinks + 3 blocs Laura (allumage, LED A1, écran X)
 ```
 
-### Composants Vue (théme/components/)
-JourneyStep, CameraSelector, VideoPlaceholder, ImagePlaceholder, Accordion, Card, CardGrid, QRCodePair, CloudFlowDiagram, FAQItem, SupportLink — tous enregistrés globalement dans `theme/index.ts`.
+### Composants Vue (theme/components/) — inchangés
+JourneyStep, CameraSelector, VideoPlaceholder (YouTube + mp4 + placeholder), ImagePlaceholder, Accordion, Card, CardGrid, QRCodePair, CloudFlowDiagram, FAQItem, SupportLink — tous enregistrés globalement dans `theme/index.ts`. Voir [[feedback_v2_design_system]] pour les patterns à respecter.
 
 ### Documents projet (docs-projet/)
-- `notes-pour-laura.md` — explicatif principal
-- `audit-implementation-vs-brief.md` — audit alignement, 6 questions à poser Laura
-- `media-procedure-laura.md` — procédure d'intégration médias (4 options hébergement)
-- `media-mapping.md` — table des 25 médias avec IDs stables
-- `slack-message-laura.md` — message prêt à envoyer
+- `notes-pour-laura.md` — explicatif principal (V2)
+- `audit-implementation-vs-brief.md` — audit alignement V2 + 6 questions structurantes (suspens)
+- `media-procedure-laura.md` — procédure d'intégration médias (anciens guidelines, médias désormais intégrés)
+- `media-mapping.md` — table des 25 médias (statuts à jour en V2.1)
+- `grille-naturalisation-ton-fr.md` — référence rédactionnelle V2.2 validée par Laura
+- `slack-message-laura.md` — message V2 initial (historique)
+- `slack-message-laura-v2.1.md` — message V2.1 (transmis)
+- `slack-message-laura-v2.2.md` — message V2.2 (à transmettre par Thomas)
 
 ### URLs / ressources clés
 - V1 prod : https://vantom69.github.io/ricoh360-bp-onboarding/ (inchangée)
-- V2 preview : https://vantom69.github.io/ricoh360-bp-onboarding-v2-preview/
-- Brief Laura : `/Users/thomasservan/Downloads/Brief nouvelle espace d'onboarding.docx`
-- Drive Laura médias : https://drive.google.com/drive/folders/1Jo45JZRUk4jA8MOemGhcx_tQTuuSwXPT
+- V2.2 preview : https://vantom69.github.io/ricoh360-bp-onboarding-v2-preview/
+- Brief Laura initial : `/Users/thomasservan/Downloads/Brief nouvelle espace d'onboarding.docx`
+- Retour Laura V1 preview : `/Users/thomasservan/Downloads/Revue V1 onboarding BP.docx`
+- Drive Laura médias (intégrés) : https://drive.google.com/drive/folders/1Jo45JZRUk4jA8MOemGhcx_tQTuuSwXPT
 - Charte graphique : `/Users/thomasservan/Downloads/Charte graphique/`
 - Repos GitHub :
-  - Vantom69/ricoh360-bp-onboarding (prod V1)
-  - Vantom69/ricoh360-bp-onboarding-v2-preview (preview, temporaire)
+  - Vantom69/ricoh360-bp-onboarding (prod V1, branche v2-refonte poussée en sauvegarde)
+  - Vantom69/ricoh360-bp-onboarding-v2-preview (preview V2.2, temporaire — à supprimer après merge final)
