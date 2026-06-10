@@ -19,7 +19,7 @@ Listez à l'avance les **zones critiques à inspecter** (équipements de sécuri
 
 ### 2. Annotez précisément vos constats
 
-Sur chaque panorama, **annotez** immédiatement :
+Sur chaque panorama, **annotez** dès la visite :
 
 - les **points conformes** validés
 - les **non-conformités** observées avec leur niveau de gravité
@@ -43,7 +43,7 @@ Avant tout partage externe d'un panorama d'inspection :
 
 - Vérifiez la **lisibilité du contenu** (lumière, cadrage, netteté)
 - **Floutez les personnes** présentes si nécessaire (cf. [Flouter des personnes](/fr/10-exploiter/flouter))
-- **Vérifiez le contenu des annotations** — elles seront aussi visibles par le destinataire
+- **Vérifiez le contenu des annotations** — elles seront visibles par le destinataire aussi
 
 ### 5. Partagez uniquement ce qui est nécessaire
 

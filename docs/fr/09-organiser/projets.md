@@ -13,35 +13,35 @@ description: Suivre un site, un chantier ou une intervention dans la durée avec
 
 ## Quand utiliser un projet plutôt qu'un album
 
-Un **album** sert à regrouper des panoramas pour les retrouver et les partager.
-Un **projet** ajoute une **dimension temporelle** : il vous permet de suivre comment un même site évolue dans le temps.
+Un **album** regroupe des panoramas pour les retrouver et les partager.
+Un **projet** ajoute une **dimension temporelle** : vous suivez l'évolution d'un même site dans le temps.
 
 Cas d'usage typiques :
 
-- Un **chantier de construction** que vous documentez chaque semaine
-- Un **bâtiment** que vous inspectez tous les trimestres
-- Une **zone industrielle** que vous suivez sur plusieurs interventions
+- Un **chantier de construction** documenté chaque semaine.
+- Un **bâtiment** inspecté tous les trimestres.
+- Une **zone industrielle** suivie sur plusieurs interventions.
 
 ## Créer un projet
 
 <VideoPlaceholder id="media:projects" />
 
-1. Depuis la plateforme web, ouvrez la section **Projets**.
+1. Sur la plateforme web, ouvrez la section **Projets**.
 2. Cliquez sur **Nouveau projet**.
 3. Nommez-le selon le site ou le chantier qu'il représente.
 4. Validez.
 
 ## Alimenter votre projet
 
-À chaque visite, ajoutez les nouveaux panoramas capturés au projet correspondant. Le projet conserve une **chronologie** automatique : vous voyez d'un coup d'œil l'évolution du site.
+À chaque visite, ajoutez les nouveaux panoramas au projet correspondant. Le projet conserve une **chronologie** automatique : vous voyez d'un coup d'œil comment le site évolue.
 
 ## Exploiter votre projet dans le temps
 
-Une fois quelques visites cumulées, le projet devient un véritable outil de suivi :
+Une fois quelques visites cumulées, le projet devient un vrai outil de suivi :
 
-- **Comparer** un panorama d'aujourd'hui avec un panorama du mois dernier (cf. [Comparer deux panoramas](/fr/10-exploiter/comparer))
-- **Annoter** un point à reprendre lors de la prochaine visite
-- **Partager** une vue temporelle complète avec un client ou un partenaire
+- **Comparer** un panorama d'aujourd'hui avec un panorama du mois dernier (cf. [Comparer deux panoramas](/fr/10-exploiter/comparer)).
+- **Annoter** un point à reprendre lors de la prochaine visite.
+- **Partager** une vue temporelle complète avec un client ou un partenaire.
 
 </JourneyStep>
 

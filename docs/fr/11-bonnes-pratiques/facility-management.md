@@ -15,15 +15,15 @@ description: 5 bonnes pratiques pour utiliser RICOH360 en facility management et
 
 ### 1. Documentez les zones techniques et les équipements clés
 
-Définissez les **zones techniques à documenter** (local technique, chaufferie, ascenseurs, salles serveurs) et les **équipements critiques** qui doivent figurer dans votre base de contenus.
+Listez les **zones techniques à documenter** (local technique, chaufferie, ascenseurs, salles serveurs) et les **équipements critiques** qui doivent figurer dans votre base de contenus.
 
 ### 2. Capturez avant et après chaque intervention
 
 Pour chaque intervention de maintenance :
 
-- **Capturez un panorama avant** l'intervention (état initial)
-- **Capturez un panorama après** l'intervention (résultat)
-- **Comparez** les deux pour documenter le travail effectué
+- **Capturez un panorama avant** l'intervention (état initial).
+- **Capturez un panorama après** l'intervention (résultat).
+- **Comparez** les deux pour documenter le travail effectué.
 
 [Voir comment comparer deux panoramas →](/fr/10-exploiter/comparer)
 
@@ -58,7 +58,7 @@ Conservez les panoramas dans le temps — ils constituent une **mémoire visuell
 - Pour les passations d'équipe ou de prestataire
 
 ::: tip
-Capturez à intervalle régulier (trimestriel, semestriel) les zones critiques même en l'absence d'intervention. Cela vous donne une base de comparaison toujours fraîche pour détecter une dégradation.
+Capturez à intervalle régulier (trimestriel, semestriel) les zones critiques même en l'absence d'intervention. Vous aurez toujours une base de comparaison fraîche pour détecter une dégradation.
 :::
 
 </JourneyStep>

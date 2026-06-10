@@ -7,7 +7,7 @@ description: Procédure d'appairage Wi-Fi entre votre caméra THETA X et l'appli
 
 <JourneyStep
   number="5A"
-  objective="Appairer votre caméra RICOH THETA X à l'application mobile RICOH360 via Wi-Fi pour pouvoir déclencher les captures et transférer vos panoramas."
+  objective="Appairer votre RICOH THETA X à l'application mobile RICOH360 via Wi-Fi pour déclencher les captures et transférer vos panoramas."
   outcome="Votre caméra est associée à votre application : vous pouvez désormais lancer des captures depuis votre smartphone."
 >
 
@@ -15,8 +15,8 @@ description: Procédure d'appairage Wi-Fi entre votre caméra THETA X et l'appli
 
 <VideoPlaceholder id="media:pair-theta-x" />
 
-1. Assurez-vous que votre caméra et votre smartphone sont **tous deux sous tension** et chargés.
-2. Activez le **Wi-Fi de la caméra** : sur la THETA X, depuis l'écran tactile, choisissez le mode Wi-Fi.
+1. Allumez la caméra et le smartphone, et vérifiez qu'ils sont bien chargés.
+2. Activez le **Wi-Fi de la caméra** : sur la THETA X, ouvrez le mode Wi-Fi depuis l'écran tactile.
 3. Sur votre smartphone, **ouvrez l'application RICOH360** et lancez la procédure de connexion caméra.
 4. **Sélectionnez votre caméra** dans la liste détectée par l'application.
 5. Validez : la caméra est associée à votre compte.
@@ -32,7 +32,7 @@ Une fois la connexion établie, vous voyez dans l'application :
 Si l'un de ces éléments n'apparaît pas, relancez la connexion.
 
 ::: tip Problème de connexion ?
-La plupart des problèmes d'appairage se résolvent en redémarrant la caméra puis l'application mobile. Vérifiez aussi que le Wi-Fi du téléphone n'est pas connecté à un autre réseau.
+La plupart des problèmes d'appairage se règlent en redémarrant la caméra puis l'application mobile. Vérifiez aussi que le Wi-Fi du téléphone n'est pas connecté à un autre réseau.
 :::
 
 Pour aller plus loin si le problème persiste : <SupportLink href="https://support.ricoh360.com/fr/faq/ricoh360-app-connection-001">Résoudre les problèmes de connexion caméra</SupportLink>

@@ -8,16 +8,16 @@ description: Connexion à l'application mobile et à la plateforme web avec les 
 <JourneyStep
   number="4"
   objective="Vous connecter à votre compte RICOH360 sur l'application mobile et sur la plateforme web — avec les mêmes identifiants."
-  outcome="Votre compte est connecté sur les deux outils. Tout ce que vous faites sur l'un est instantanément accessible sur l'autre."
+  outcome="Votre compte est connecté sur les deux outils. Ce que vous faites sur l'un est immédiatement disponible sur l'autre."
 >
 
 ## Un seul compte pour tout
 
 ::: tip À retenir
-Les **mêmes identifiants RICOH360** sont utilisés pour vous connecter à l'application mobile et à la plateforme web. Vous n'avez pas besoin de créer deux comptes.
+Les **mêmes identifiants RICOH360** vous servent pour l'application mobile et pour la plateforme web. Pas besoin de créer deux comptes.
 :::
 
-Vos identifiants ont été envoyés par votre référent commercial à la livraison de votre Business Pack. Si vous ne les retrouvez plus, contactez le support RICOH360.
+Votre référent commercial vous a transmis vos identifiants à la livraison de votre Business Pack. Si vous ne les retrouvez plus, contactez le support RICOH360.
 
 ## Se connecter sur mobile
 
@@ -37,9 +37,9 @@ Vos identifiants ont été envoyés par votre référent commercial à la livrai
 
 ## Pourquoi c'est important
 
-- Tous vos contenus capturés sur le terrain depuis l'application mobile **remontent automatiquement** dans votre espace web.
-- Tout ce que vous organisez (albums, projets, plans) depuis l'ordinateur est **immédiatement visible** depuis le mobile.
-- Vous n'avez **rien à synchroniser manuellement**.
+- Tout ce que vous capturez sur le terrain depuis l'application mobile **remonte automatiquement** dans votre espace web.
+- Ce que vous organisez (albums, projets, plans) depuis l'ordinateur est **immédiatement visible** sur le mobile.
+- Vous n'avez **rien à synchroniser à la main**.
 
 </JourneyStep>
 

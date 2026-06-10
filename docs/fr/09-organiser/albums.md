@@ -8,16 +8,16 @@ description: Créer, nommer et gérer des albums pour regrouper vos panoramas.
 <JourneyStep
   number="9A"
   objective="Regrouper vos panoramas dans des albums clairs pour les retrouver vite, les partager facilement et garder un espace de travail lisible."
-  outcome="Vous savez créer un album, y ajouter des panoramas, le nommer correctement et le supprimer."
+  outcome="Vous savez créer un album, y ajouter des panoramas, lui donner un nom utile et le supprimer."
 >
 
 ## Créer un album
 
 <VideoPlaceholder id="media:albums" />
 
-1. Depuis la plateforme web, ouvrez la section **Albums**.
+1. Sur la plateforme web, ouvrez la section **Albums**.
 2. Cliquez sur **Nouvel album**.
-3. Donnez un **nom clair** à votre album (cf. bonne pratique ci-dessous).
+3. Donnez un **nom clair** à votre album (cf. la bonne pratique ci-dessous).
 4. Validez la création.
 
 ## Ajouter des panoramas à un album
@@ -26,7 +26,7 @@ description: Créer, nommer et gérer des albums pour regrouper vos panoramas.
 2. Cliquez sur **Ajouter à un album**.
 3. Choisissez l'album cible ou créez-en un nouveau.
 
-Un même panorama peut figurer dans **plusieurs albums** simultanément.
+Un même panorama peut figurer dans **plusieurs albums** en même temps.
 
 ## Bonne pratique : un album = une réalité métier
 
@@ -48,7 +48,7 @@ Pour rester organisé dans la durée, créez un album par **réalité métier**,
 </CardGrid>
 
 ::: tip Convention de nommage
-Pour les équipes qui partagent une plateforme, fixez ensemble une **convention de nommage** dès le démarrage. Cela évite la confusion quand les albums se multiplient.
+Quand plusieurs membres partagent une plateforme, mettez-vous d'accord sur une **convention de nommage** dès le départ. Vous éviterez la confusion quand les albums se multiplieront.
 :::
 
 ## Supprimer un album

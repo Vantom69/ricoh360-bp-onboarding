@@ -7,8 +7,8 @@ description: Préparer la prise, lancer la capture et vérifier le résultat dep
 
 <JourneyStep
   number="6"
-  objective="Prendre votre tout premier panorama 360° dans de bonnes conditions et vérifier que le résultat est conforme à ce que vous attendiez."
-  outcome="Vous avez capturé votre premier panorama et vous savez le visualiser dans l'application avant de l'envoyer vers le Cloud."
+  objective="Prendre votre tout premier panorama 360° dans de bonnes conditions et vérifier que le résultat correspond à ce que vous vouliez."
+  outcome="Vous avez capturé votre premier panorama et vous savez le visualiser dans l'application avant qu'il parte vers le Cloud."
 >
 
 ## Bien préparer la prise
@@ -20,7 +20,7 @@ Avant de déclencher, prenez 30 secondes pour vérifier :
     Caméra suffisamment chargée pour vos prises.
   </Card>
   <Card icon="🪜" title="Support stable">
-    Perche, trépied ou poignée — évitez le tenu à main levée.
+    Perche, trépied ou poignée — évitez la prise à main levée.
   </Card>
   <Card icon="💡" title="Éclairage">
     Lumière homogène, évitez les contre-jours marqués.
@@ -33,36 +33,36 @@ Avant de déclencher, prenez 30 secondes pour vérifier :
 
 1. Ouvrez l'application mobile RICOH360.
 2. Vérifiez que la caméra est bien connectée (cf. section précédente).
-3. Lancez le mode **Photo 360°**.
-4. Positionnez votre caméra sur son support.
+3. Sélectionnez le mode **Photo 360°**.
+4. Posez la caméra sur son support.
 5. Déclenchez la capture : utilisez le **retardateur** pour ne pas apparaître sur la prise.
 
 ## Les réglages simples à connaître
 
 Pour cette première prise, restez sur les réglages par défaut et concentrez-vous sur :
 
-- **Le mode photo 360°** — sélectionné par défaut sur votre Business Pack
+- **Le mode photo 360°** — actif par défaut sur votre Business Pack
 - **Le retardateur** — pour vous éloigner du champ avant le déclenchement
 - **Le support** — votre perche ou trépied, stable et droit
-- **La luminosité** — un environnement bien éclairé pour le meilleur rendu
+- **L'éclairage** — un environnement bien éclairé pour le meilleur rendu
 
 ::: info Pour les réglages avancés
-Les réglages avancés (HDR, exposition manuelle, balance des blancs) sont à explorer une fois que vos premières captures sont fluides. Ils sont couverts dans la section [Améliorer la qualité de vos captures](/fr/12-aide-depannage/).
+Les réglages avancés (HDR, exposition manuelle, balance des blancs) viendront naturellement une fois vos premières captures fluides. Ils sont couverts dans la section [Améliorer la qualité de vos captures](/fr/12-aide-depannage/).
 :::
 
 Pour aller plus loin sur les paramètres disponibles depuis l'application : <SupportLink href="https://support.ricoh360.com/fr/manual/common-ricoh360-app-capture-02">Paramètres du retardateur et de capture</SupportLink>
 
 ## Vérifier le panorama dans l'application
 
-<ImagePlaceholder id="media:verify-panorama-in-app" />
+<VideoPlaceholder id="media:verify-panorama-in-app" />
 
 Aussitôt la capture terminée, le panorama s'affiche dans votre application. Vérifiez rapidement :
 
-- Le **cadrage est cohérent** (pas d'objet trop proche masquant la scène)
-- L'**éclairage est correct** (ni surexposé, ni trop sombre)
-- Vous ne figurez pas dessus (sauf intentionnel)
+- Le **cadrage est cohérent** (pas d'objet trop proche masquant la scène).
+- L'**éclairage est correct** (ni surexposé, ni trop sombre).
+- Vous ne figurez pas dessus (sauf si c'est voulu).
 
-Si la prise vous convient, elle sera **automatiquement transférée vers le Cloud** dès que votre application aura accès au réseau.
+Si la prise vous convient, elle part **automatiquement vers le Cloud** dès que votre application retrouve du réseau.
 
 </JourneyStep>
 

@@ -15,7 +15,7 @@ description: 5 bonnes pratiques pour utiliser RICOH360 sur un chantier.
 
 ### 1. Capturez systématiquement les mêmes zones à chaque visite
 
-Définissez dès le début du chantier les **points de capture récurrents** (entrées, étages, zones critiques) et passez par tous ces points à chaque visite. C'est la base de tout suivi temporel.
+Dès le démarrage du chantier, repérez les **points de capture clés** — entrées, étages, zones critiques. Repassez par les mêmes points à chaque visite. C'est la base de tout suivi temporel.
 
 ### 2. Utilisez les plans pour positionner vos panoramas
 
@@ -46,7 +46,7 @@ Adoptez une logique d'organisation cohérente :
 C'est ce qui vous permettra de scaler quand le volume de panoramas augmentera.
 
 ::: tip Convention équipe
-Convenez de la structure d'organisation et du vocabulaire d'annotation avec votre équipe **avant** de démarrer un nouveau chantier. C'est beaucoup plus simple à l'amont qu'à corriger à la fin.
+Mettez-vous d'accord sur la structure d'organisation et le vocabulaire d'annotation avec votre équipe **avant** de démarrer un nouveau chantier. C'est beaucoup plus simple en amont qu'à corriger en fin de projet.
 :::
 
 </JourneyStep>

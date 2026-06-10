@@ -1,14 +1,14 @@
 ---
 title: Installer votre RICOH THETA A1
-description: Déballage, mise sous tension, charge et mise à jour firmware de votre RICOH THETA A1.
+description: Déballage, mise sous tension, charge et mise à jour du firmware de votre RICOH THETA A1.
 ---
 
 # 2. Installer votre RICOH THETA A1
 
 <JourneyStep
   number="2B"
-  objective="Préparer votre RICOH THETA A1 à sa première utilisation : la déballer, vérifier son contenu, la charger, l'allumer et la mettre à jour."
-  outcome="Votre RICOH THETA A1 est sous tension, chargée et à jour, prête à être connectée à l'application mobile."
+  objective="Préparer votre RICOH THETA A1 pour sa première utilisation : la déballer, la charger, l'allumer et la mettre à jour."
+  outcome="Votre RICOH THETA A1 est sous tension, chargée et à jour. Elle est prête à être connectée à l'application mobile."
 >
 
 ## Contenu du pack
@@ -21,43 +21,43 @@ Votre Business Pack contient :
 - 1 câble USB-C
 - 1 dragonne de transport
 - 1 guide de démarrage rapide
-- (Optionnel) Accessoires complémentaires selon votre configuration
+- (Selon votre configuration) des accessoires complémentaires
 
-Si un élément manque, contactez votre référent commercial avant de continuer.
+S'il manque un élément, contactez votre référent commercial avant de continuer.
 
 </Accordion>
 
-## Mettre la caméra sous tension
+## Allumer la caméra
 
-1. Localisez le bouton **Power** sur le côté de la caméra.
+1. Repérez le bouton **Power** sur le côté de la caméra.
 2. Maintenez-le enfoncé environ 2 secondes.
-3. Le voyant d'état s'illumine et la caméra démarre.
+3. Le voyant d'état s'allume : la caméra démarre.
 
 ::: tip Premier démarrage
-Au premier démarrage, vous pouvez être invité à choisir votre langue ou à accepter les conditions d'utilisation depuis l'application mobile. Suivez les indications.
+Au premier démarrage, l'application mobile vous demande peut-être de choisir une langue ou d'accepter les conditions d'utilisation. Suivez simplement les indications.
 :::
 
 ## Charger la caméra
 
-Connectez le câble USB-C fourni :
+Branchez le câble USB-C fourni :
 
 - d'un côté à votre caméra,
 - de l'autre à un chargeur USB ou à votre ordinateur.
 
-Le voyant de charge s'illumine. Comptez environ 2 heures pour une charge complète. Vous pouvez utiliser la caméra pendant qu'elle charge.
+Le voyant de charge s'allume. Comptez environ 2 heures pour une charge complète. Vous pouvez utiliser la caméra pendant qu'elle charge.
 
 ## Mettre à jour le firmware
 
-Avant toute première capture, **assurez-vous que la caméra utilise la dernière version du firmware**. Une mise à jour améliore la stabilité, ajoute des fonctionnalités et corrige les défauts connus.
+Avant votre première capture, **vérifiez que la caméra utilise la dernière version du firmware**. Une mise à jour améliore la stabilité, ajoute des fonctionnalités et corrige les défauts connus.
 
 <VideoPlaceholder id="media:firmware-update" />
 
-La procédure complète vous est présentée dans la vidéo ci-dessus.
+La vidéo ci-dessus vous montre la procédure complète.
 
 </JourneyStep>
 
 ## Prochaine étape
 
-Une fois votre caméra à jour, passez à l'installation de l'application mobile RICOH360 :
+Une fois la caméra à jour, passez à l'installation de l'application mobile RICOH360 :
 
 [**3. Installer l'application mobile →**](/fr/03-installer-app/)
