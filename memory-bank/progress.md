@@ -21,10 +21,32 @@
 - [x] One-pager projet created for team kickoff
 - [x] Task V1 sheet created with live URLs
 
+## V2 — Refonte selon brief Laura (2026-06-08)
+- [x] Tag v1.0 immuable sur main
+- [x] Branche v2-refonte créée
+- [x] Architecture journey-based 12 sections FR
+- [x] 11 composants Vue (JourneyStep, CameraSelector, VideoPlaceholder, etc.)
+- [x] Theme charte étendu (palette + tokens)
+- [x] 21 pages V2 FR rédigées selon brief Laura
+- [x] 4 docs-projet pour Laura (notes, mapping, procédure, audit) + message Slack
+- [x] Repo preview créé + workflow deploy multi-repo + push v2-refonte
+- [x] Preview live : https://vantom69.github.io/ricoh360-bp-onboarding-v2-preview/
+- [x] Audit alignement implémentation vs brief : 2 écarts corrigés, 6 zones à valider
+
 ## In progress
-- [ ] Laura prend le lead — kickoff doc Notion envoyé, retour Slack fait le 2026-05-12, réunion d'alignement le 2026-05-13
-- [ ] Scope élargi : ajout Business Pack Type S + chantier interne (process)
-- [ ] FR translation review by Thomas
+- [ ] Transmission preview à Laura via Slack (message prêt dans docs-projet/slack-message-laura.md)
+- [ ] Réunion de validation Laura (30-45 min prévue)
+- [ ] Laura récupère URLs support.ricoh360.com exactes (6 liens) + URLs stores App Store / Play Store
+- [ ] Laura choisit option hébergement médias (recommandation Option A : conversion .mov → .mp4)
+
+## Backlog post-validation Laura
+- [ ] Corrections suite retour Laura sur preview
+- [ ] Intégration des médias livrés par Laura
+- [ ] Génération QR codes finaux
+- [ ] Test responsive mobile sur les composants custom
+- [ ] Merge v2-refonte → main, tag v2.0
+- [ ] Suppression du repo preview après merge
+- [ ] Phase 7 : traduction EN
 
 ## Backlog (V2) - See GitHub Issues
 - [ ] Password-gate (access code like Dynamic Presentation)
@@ -47,3 +69,4 @@
 |------|-------|-------------|
 | 2026-04-14 | V1 full build | Site live at vantom69.github.io/ricoh360-bp-onboarding |
 | 2026-05-12 | Kickoff Laura | Retour Slack envoyé sur kickoff doc Laura, alignement prévu 2026-05-13. Scope élargi BP Type S + chantier interne acté. Rôles light validés. |
+| 2026-06-08 | Refonte V2 livrée | Brief Laura analysé, V2 squelette + contenu + composants + preview en ligne livrés. Tag v1.0 posé, branche v2-refonte + repo preview. 4 docs + message Slack pour Laura prêts à transmettre. |
