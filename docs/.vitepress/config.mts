@@ -145,10 +145,6 @@ export default defineConfig({
       },
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Vantom69/ricoh360-bp-onboarding' },
-    ],
-
     footer: {
       message: 'RICOH360 Business Pack — Onboarding officiel',
       copyright: 'Ricoh Futures EMEA',
