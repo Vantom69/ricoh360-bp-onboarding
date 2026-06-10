@@ -50,6 +50,8 @@ Pour cette première prise, restez sur les réglages par défaut et concentrez-v
 Les réglages avancés (HDR, exposition manuelle, balance des blancs) sont à explorer une fois que vos premières captures sont fluides. Ils sont couverts dans la section [Améliorer la qualité de vos captures](/fr/12-aide-depannage/).
 :::
 
+Pour aller plus loin sur les paramètres disponibles depuis l'application : <SupportLink href="https://support.ricoh360.com/fr/manual/common-ricoh360-app-capture-02">Paramètres du retardateur et de capture</SupportLink>
+
 ## Vérifier le panorama dans l'application
 
 <ImagePlaceholder id="media:verify-panorama-in-app" />

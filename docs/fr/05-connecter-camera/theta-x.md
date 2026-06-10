@@ -35,6 +35,8 @@ Si l'un de ces éléments n'apparaît pas, relancez la connexion.
 La plupart des problèmes d'appairage se résolvent en redémarrant la caméra puis l'application mobile. Vérifiez aussi que le Wi-Fi du téléphone n'est pas connecté à un autre réseau.
 :::
 
+Pour aller plus loin si le problème persiste : <SupportLink href="https://support.ricoh360.com/fr/faq/ricoh360-app-connection-001">Résoudre les problèmes de connexion caméra</SupportLink>
+
 </JourneyStep>
 
 ## Prochaine étape
