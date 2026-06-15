@@ -2,7 +2,7 @@
 
 Plateforme d'onboarding et base de connaissances pour les clients RICOH360 Business Pack Series.
 
-> Cette branche `v2-refonte` héberge la **V2 — refonte en parcours Customer Success guidé**, en cours de validation avec l'équipe métier. Voir section "Versions" ci-dessous.
+> Cette branche `v2-refonte` héberge la **V2 — refonte en parcours Customer Success guidé**, en cours de validation finale avec l'équipe métier. Voir section "Versions" ci-dessous.
 
 ## Versions
 
@@ -17,17 +17,20 @@ Tag immuable : `v1.0`. Vit sur la branche `main`.
 
 **URL preview** : https://vantom69.github.io/ricoh360-bp-onboarding-v2-preview/
 
-Refonte complète en **parcours d'onboarding Customer Success guidé**.
-Architecture journey-based 12 sections (vs topic-based V1), 21 pages FR rédigées, 11 composants Vue personnalisés, theme charte étendu, mapping médias avec placeholders.
+Refonte complète en **parcours d'onboarding Customer Success guidé**. Architecture journey-based 12 sections (vs topic-based V1), 21 pages FR rédigées, 15 composants Vue personnalisés, theme charte étendu, médias intégrés.
 
-FR uniquement en première itération — EN dans une seconde vague après validation.
+Fonctionnalités notables :
+- **Gamification du parcours** : jauge de progression dans la sidebar (X/12 + barre animée), checks ✓/●/○ sur chaque étape du menu, messages de réussite après les étapes clés
+- **Médias intégrés** : 19 vidéos YouTube embed automatique + 6 captures hébergées
+- **Bilingue à terme** : FR en première itération, EN dans une seconde vague après validation
+- **Mode sombre complet** sur tous les composants custom et les tables markdown
 
 Le repo preview `Vantom69/ricoh360-bp-onboarding-v2-preview` est temporaire et sera supprimé après le merge V2 → main.
 
 ## Stack
 
 - [VitePress 1.x](https://vitepress.dev/) — site statique, markdown-first
-- Vue 3 — composants custom (JourneyStep, CameraSelector, VideoPlaceholder, FAQ, Accordion, Card…)
+- Vue 3 — 15 composants custom (JourneyStep, CameraSelector, VideoPlaceholder, ImagePlaceholder, Card, CardGrid, Accordion, FAQItem, QRCodePair, CloudFlowDiagram, SupportLink, JourneyProgress, JourneyTracker, SuccessMessage, SidebarTracker)
 - GitHub Pages + GitHub Actions — CI/CD avec base URL configurable via env `VITEPRESS_BASE`
 
 ## Stratégie de branches
@@ -64,28 +67,31 @@ npm run docs:preview
 ```
 docs/
   fr/                              # Contenu français V2 (12 sections journey-based)
-    01-bienvenue/
-    02-installer-camera/
-    03-installer-app/
-    04-compte-ricoh360/
-    05-connecter-camera/
-    06-premiere-capture/
-    07-comprendre-cloud/
-    08-retrouver-partager/
-    09-organiser/
-    10-exploiter/
-    11-bonnes-pratiques/
-    12-aide-depannage/
+    01-bienvenue/                  # Présentation BP + sélecteur caméra + tableau comparatif
+    02-installer-camera/           # Setup THETA X / A1
+    03-installer-app/              # App mobile + QR codes
+    04-compte-ricoh360/            # Identifiants partagés mobile + web
+    05-connecter-camera/           # Appairage THETA X / A1
+    06-premiere-capture/           # Première capture 360°
+    07-comprendre-cloud/           # Diagramme flux Cloud
+    08-retrouver-partager/         # Partage + liens
+    09-organiser/                  # Albums / projets / plans
+    10-exploiter/                  # Annotations / comparer / super-résolution / floutage
+    11-bonnes-pratiques/           # Construction / inspection / facility management
+    12-aide-depannage/             # FAQ + dépannage + support
   public/                          # Images, vidéos et assets statiques
   .vitepress/
     config.mts                     # Config VitePress (nav, sidebar, theme)
-    data/media.ts                  # Source de vérité du mapping médias V2
+    data/
+      media.ts                     # Mapping des 25 médias (YouTube + HubSpot)
+      journey-steps.ts             # Source de vérité des 12 sections (gamification)
     theme/
-      custom.css                   # Tokens et palette charte
-      components/                  # 11 composants Vue V2
+      custom.css                   # Tokens, palette charte, dark mode global
+      index.ts                     # Layout custom (slot sidebar-nav-before + layout-top)
+      components/                  # 15 composants Vue + v2.css
 .github/workflows/
   deploy.yml                       # Build + deploy GitHub Pages (env VITEPRESS_BASE)
-docs-projet/                       # Notes de projet, briefs, audits internes
+docs-projet/                       # Notes de projet, briefs, audits, messages Slack
 memory-bank/                       # Contexte projet pour sessions de travail
 ```
 
@@ -104,6 +110,8 @@ Voir le dossier `docs-projet/` pour les briefs, notes et audits internes :
 - Audit V2 — alignement implémentation vs brief Laura
 - Procédure médias V2 — workflow d'intégration vidéos/captures
 - Mapping médias V2 — table des 25 médias référencés
+- Grille de naturalisation du ton FR — référence rédactionnelle validée par Laura
+- Messages Slack v2.1 / v2.2 / v2.4 — historique des livraisons
 
 ## Marque
 
