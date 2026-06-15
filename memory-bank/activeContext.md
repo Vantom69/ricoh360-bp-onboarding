@@ -1,6 +1,19 @@
 # Active Context
 
-## Last session: 2026-06-10 (V2.3 — retours Laura ponctuels)
+## Last session: 2026-06-15 (V2.4 — gamification Phase J + enrichissement bienvenue)
+
+### What was accomplished (V2.4)
+- **Phase J.1 — Jauge de progression** : `data/journey-steps.ts` (source de vérité 12 sections), `JourneyProgress.vue` (jauge sidebar via slot `sidebar-nav-before`), `JourneyTracker.vue` (marqueur invisible inséré dans 21 pages, marque la section terminée au mount via localStorage), Layout custom dans `theme/index.ts`
+- **Phase J.2 — Messages de réussite** : composant `SuccessMessage.vue` + 6 messages Laura intégrés sur pages 03, 04, 05-x, 05-a1, 06, 08 (avant « Prochaine étape ») avec fade-in subtil
+- **Phase J.3 — Harmonisation CTAs** : retrait emoji bouée de `SupportLink.vue`, `border-radius` lg → xl, padding élargi, espacement entre liens adjacents
+- **Phase J.4 — Enrichissement page bienvenue** : 6 nouveaux blocs (présentation BP, ce que comprend, RICOH Care dédié, tableau comparatif 9 lignes, fonctionnalités premium 6 cartes cliquables, conservation du CardGrid « Ce que vous allez apprendre »)
+- 3 commits propres push origin + preview, workflow Actions vert, HTTP 200 confirmé
+- Message Slack v2.4 prêt dans `docs-projet/slack-message-laura-v2.4.md`
+
+### Reportée
+- **Phase K** : checks ✓/●/○ dynamiques dans la sidebar + micro-animations item-level → traitée immédiatement après cette sauvegarde sur demande Thomas.
+
+## Previous session: 2026-06-10 (V2.3 — retours Laura ponctuels)
 
 ### What was accomplished (V2.3)
 - **Page 01-bienvenue** (`ea65fa0`) : ajout d'un bloc « Le RICOH360 Business Pack en bref » après l'intro (avant les objectifs), qui présente l'offre — abonnement professionnel, location caméra RICOH THETA, licences App + WebApp, support Ricoh Care
