@@ -18,16 +18,19 @@ Tag immuable : `v1.0`.
 **URL preview** : https://vantom69.github.io/ricoh360-bp-onboarding-v2-preview/
 
 Refonte complète en **parcours d'onboarding Customer Success guidé**.
-Architecture journey-based 12 sections (vs topic-based V1), 21 pages FR rédigées, 11 composants Vue personnalisés (CameraSelector, JourneyStep, VideoPlaceholder, FAQ pliable…), theme charte étendu.
+Architecture journey-based 12 sections (vs topic-based V1), 21 pages FR rédigées, 15 composants Vue personnalisés (CameraSelector, JourneyStep, VideoPlaceholder, FAQ pliable, JourneyProgress, SidebarTracker, SuccessMessage…), theme charte étendu, mode sombre complet.
 
-FR uniquement en première itération — EN dans une seconde vague après validation.
+Fonctionnalités notables :
+- **Gamification du parcours** : jauge de progression dans la sidebar, checks ✓/●/○ sur chaque étape, messages de réussite après les étapes clés
+- **25 médias intégrés** : 19 vidéos YouTube embed automatique + 6 captures hébergées HubSpot
+- **Bilingue à terme** : FR en première itération, EN dans une seconde vague après validation
 
 Travail sur la branche `v2-refonte`. Le repo preview `Vantom69/ricoh360-bp-onboarding-v2-preview` est temporaire et sera supprimé après le merge V2 → main.
 
 ## Stack
 
 - [VitePress 1.x](https://vitepress.dev/) — site statique, markdown-first
-- Vue 3 — composants custom (V2)
+- Vue 3 — 15 composants custom (V2)
 - GitHub Pages + GitHub Actions — CI/CD avec base URL configurable via env `VITEPRESS_BASE`
 
 ## Stratégie de branches
@@ -68,8 +71,8 @@ docs/
   public/          # Images, vidéos et assets statiques
   .vitepress/
     config.mts     # Config VitePress (nav, sidebar, theme)
-    data/          # Sources de données (mapping médias V2)
-    theme/         # Theme custom + composants Vue
+    data/          # Sources de données (mapping médias + journey steps V2)
+    theme/         # Theme custom + 15 composants Vue (V2)
 .github/workflows/
   deploy.yml       # Build + deploy GitHub Pages (env VITEPRESS_BASE)
 docs-projet/       # Notes de projet, briefs, audits internes
@@ -91,6 +94,8 @@ Voir le dossier `docs-projet/` pour les briefs, notes et audits internes :
 - Audit V2 — alignement implémentation vs brief Laura
 - Procédure médias V2 — workflow d'intégration vidéos/captures
 - Mapping médias V2 — table des 25 médias référencés
+- Grille de naturalisation du ton FR — référence rédactionnelle validée par Laura
+- Messages Slack v2.1 / v2.2 / v2.4 — historique des livraisons
 
 ## Marque
 
