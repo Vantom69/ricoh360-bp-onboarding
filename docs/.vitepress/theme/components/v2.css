@@ -751,6 +751,63 @@
 }
 
 /* ============================================
+   Sidebar checks dynamiques (Phase K)
+   ============================================ */
+.VPSidebar a.journey-completed,
+.VPSidebar a.journey-current,
+.VPSidebar a.journey-todo {
+  position: relative;
+  padding-left: 22px !important;
+}
+.VPSidebar a.journey-completed::before,
+.VPSidebar a.journey-current::before,
+.VPSidebar a.journey-todo::before {
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+  animation: journey-check-fade 350ms ease;
+}
+.VPSidebar a.journey-completed::before {
+  content: "✓";
+  color: var(--ricoh-blue-1);
+}
+.VPSidebar a.journey-current::before {
+  content: "●";
+  color: var(--ricoh-blue-2);
+  animation: journey-current-pulse 1800ms ease-in-out infinite;
+}
+.VPSidebar a.journey-todo::before {
+  content: "○";
+  color: var(--ricoh-gray-6);
+  opacity: 0.7;
+}
+.VPSidebar a.journey-current {
+  font-weight: 600;
+}
+.dark .VPSidebar a.journey-completed::before {
+  color: var(--ricoh-blue-light-1);
+}
+.dark .VPSidebar a.journey-current::before {
+  color: var(--ricoh-blue-light-2);
+}
+.dark .VPSidebar a.journey-todo::before {
+  color: var(--ricoh-gray-7);
+}
+@keyframes journey-check-fade {
+  from { opacity: 0; transform: translateY(-50%) translateX(-4px); }
+  to { opacity: 1; transform: translateY(-50%) translateX(0); }
+}
+@keyframes journey-current-pulse {
+  0%, 100% { opacity: 1; transform: translateY(-50%) scale(1); }
+  50% { opacity: 0.65; transform: translateY(-50%) scale(0.92); }
+}
+
+/* ============================================
    SuccessMessage (encart de réussite intégré)
    ============================================ */
 .success-message {

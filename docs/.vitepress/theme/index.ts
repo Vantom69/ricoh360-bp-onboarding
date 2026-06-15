@@ -18,13 +18,16 @@ import SupportLink from './components/SupportLink.vue'
 import JourneyProgress from './components/JourneyProgress.vue'
 import JourneyTracker from './components/JourneyTracker.vue'
 import SuccessMessage from './components/SuccessMessage.vue'
+import SidebarTracker from './components/SidebarTracker.vue'
 
 export default {
   extends: DefaultTheme,
   // Layout custom : injecte la jauge de progression au-dessus de la nav sidebar
+  // + SidebarTracker invisible qui marque les items du menu avec ✓/●/○
   Layout: () =>
     h(DefaultTheme.Layout, null, {
       'sidebar-nav-before': () => h(JourneyProgress),
+      'layout-top': () => h(SidebarTracker),
     }),
   enhanceApp({ app }) {
     app.component('JourneyStep', JourneyStep)
