@@ -15,6 +15,27 @@
 - CSS `::before` dans `v2.css` : badges ✓ (bleu, fade-in 350ms), ● (accent, pulse 1800ms discret), ○ (gris). Dark mode complet. Font-weight 600 sur l'étape courante.
 - Commit `b7ac34a`, push origin + preview, deploy vert HTTP 200 en 1m16s.
 
+### Clôture V2.4 — MAJ READMEs
+- README sur `v2-refonte` (commit `b80b720`) — version détaillée : 15 composants listés, gamification, structure complète, médias intégrés
+- README sur `main` (commit `a08e93e`) — version concise pour visiteurs GitHub
+- Tous les remotes synchronisés : main + v2-refonte sur origin, v2-refonte miroir sur preview/main
+
+### Current state (fin session 2026-06-15)
+- Working tree clean, sur branche `v2-refonte`
+- HEAD local = origin/v2-refonte = preview/main
+- main local = origin/main (V1 + README V2.4 à jour)
+- Preview V2.4 LIVE HTTP 200
+- V1 prod inchangée HTTP 200
+- Message Slack v2.4 prêt à transmettre dans docs-projet/
+
+### What to do next session
+1. Récupérer le **retour final Laura** sur V2.4 complète (gamification + bienvenue + checks sidebar)
+2. Si corrections demandées → itérer sur v2-refonte → push preview
+3. Si **validation finale** → **Phase E** : merge `v2-refonte` → `main`, tag `v2.0`, suppression du repo preview, MAJ finale README (passage de « V2 en cours » à « V2 en production »)
+4. Ouvrir les **6 questions structurantes en suspens** (cf. docs-projet/audit-implementation-vs-brief.md §6) avec Laura à la prochaine occasion
+5. Récupérer l'**URL support « améliorer la qualité de capture »** qu'elle n'a pas fournie
+6. Si Phase E faite : démarrer **Phase 7** — traduction EN seconde itération
+
 ## Previous session: 2026-06-10 (V2.3 — retours Laura ponctuels)
 
 ### What was accomplished (V2.3)
