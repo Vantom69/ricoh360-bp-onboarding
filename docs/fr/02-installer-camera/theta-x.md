@@ -3,6 +3,8 @@ title: Installer votre RICOH THETA X
 description: Déballage, mise sous tension, charge et mise à jour du firmware de votre RICOH THETA X.
 ---
 
+<JourneyTracker section="02" />
+
 # 2. Installer votre RICOH THETA X
 
 <JourneyStep

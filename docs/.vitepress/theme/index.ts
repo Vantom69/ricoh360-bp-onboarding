@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
+import { h } from 'vue'
 import './custom.css'
 import './components/v2.css'
 
@@ -14,9 +15,17 @@ import QRCodePair from './components/QRCodePair.vue'
 import CloudFlowDiagram from './components/CloudFlowDiagram.vue'
 import FAQItem from './components/FAQItem.vue'
 import SupportLink from './components/SupportLink.vue'
+import JourneyProgress from './components/JourneyProgress.vue'
+import JourneyTracker from './components/JourneyTracker.vue'
+import SuccessMessage from './components/SuccessMessage.vue'
 
 export default {
   extends: DefaultTheme,
+  // Layout custom : injecte la jauge de progression au-dessus de la nav sidebar
+  Layout: () =>
+    h(DefaultTheme.Layout, null, {
+      'sidebar-nav-before': () => h(JourneyProgress),
+    }),
   enhanceApp({ app }) {
     app.component('JourneyStep', JourneyStep)
     app.component('CameraSelector', CameraSelector)
@@ -29,5 +38,7 @@ export default {
     app.component('CloudFlowDiagram', CloudFlowDiagram)
     app.component('FAQItem', FAQItem)
     app.component('SupportLink', SupportLink)
+    app.component('JourneyTracker', JourneyTracker)
+    app.component('SuccessMessage', SuccessMessage)
   },
 } satisfies Theme

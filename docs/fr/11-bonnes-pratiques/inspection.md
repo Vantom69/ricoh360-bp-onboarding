@@ -3,6 +3,8 @@ title: Inspection et conformité
 description: 5 bonnes pratiques pour utiliser RICOH360 dans un contexte d'inspection ou de contrôle de conformité.
 ---
 
+<JourneyTracker section="11" />
+
 # 11B. Inspection et conformité
 
 <JourneyStep

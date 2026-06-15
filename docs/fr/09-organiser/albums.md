@@ -3,6 +3,8 @@ title: Mes albums
 description: Créer, nommer et gérer des albums pour regrouper vos panoramas.
 ---
 
+<JourneyTracker section="09" />
+
 # 9A. Mes albums
 
 <JourneyStep

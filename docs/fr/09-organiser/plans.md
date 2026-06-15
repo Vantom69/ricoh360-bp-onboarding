@@ -3,6 +3,8 @@ title: Mes plans
 description: Positionner vos panoramas sur un plan pour naviguer spatialement entre vos points de capture.
 ---
 
+<JourneyTracker section="09" />
+
 # 9C. Mes plans
 
 <JourneyStep

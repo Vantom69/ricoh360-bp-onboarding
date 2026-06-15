@@ -3,6 +3,8 @@ title: Construction et suivi de chantier
 description: 5 bonnes pratiques pour utiliser RICOH360 sur un chantier.
 ---
 
+<JourneyTracker section="11" />
+
 # 11A. Construction et suivi de chantier
 
 <JourneyStep

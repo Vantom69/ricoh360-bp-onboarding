@@ -655,21 +655,20 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  margin: 0 var(--space-3) var(--space-2) 0;
   background: var(--ricoh-blue-light-4);
   color: var(--ricoh-blue-1);
   border: 1px solid var(--ricoh-blue-light-2);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-xl);
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 .support-link:hover {
   background: var(--ricoh-blue-light-3);
-}
-.support-link__icon {
-  font-size: 16px;
+  border-color: var(--ricoh-blue-light-1);
 }
 .support-link__external {
   font-size: 12px;
@@ -682,6 +681,129 @@
 }
 .dark .support-link:hover {
   background: rgba(84, 78, 255, 0.2);
+}
+
+/* ============================================
+   JourneyProgress (jauge de progression sidebar)
+   ============================================ */
+.journey-progress {
+  margin: var(--space-4) var(--space-3) var(--space-6);
+  padding: var(--space-4);
+  background: linear-gradient(160deg, var(--ricoh-blue-light-4) 0%, #ffffff 100%);
+  border: 1px solid var(--ricoh-blue-light-2);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.journey-progress__label {
+  margin: 0 0 var(--space-1);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ricoh-blue-1);
+}
+.journey-progress__count {
+  margin: 0 0 var(--space-3);
+  font-size: 14px;
+  color: var(--ricoh-gray-2);
+}
+.journey-progress__count strong {
+  color: var(--ricoh-black);
+  font-weight: 700;
+  font-size: 16px;
+}
+.journey-progress__bar {
+  height: 8px;
+  background: var(--ricoh-gray-9);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.journey-progress__bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--ricoh-blue-1) 0%, var(--ricoh-blue-2) 100%);
+  border-radius: var(--radius-sm);
+  transition: width 400ms ease;
+}
+.journey-progress__percent {
+  margin: var(--space-2) 0 0;
+  font-size: 12px;
+  color: var(--ricoh-gray-3);
+  text-align: right;
+}
+.dark .journey-progress {
+  background: rgba(84, 78, 255, 0.06);
+  border-color: rgba(174, 198, 255, 0.2);
+}
+.dark .journey-progress__label {
+  color: var(--ricoh-blue-light-1);
+}
+.dark .journey-progress__count {
+  color: var(--ricoh-gray-8);
+}
+.dark .journey-progress__count strong {
+  color: var(--ricoh-gray-9);
+}
+.dark .journey-progress__bar {
+  background: rgba(255, 255, 255, 0.08);
+}
+.dark .journey-progress__percent {
+  color: var(--ricoh-gray-7);
+}
+
+/* ============================================
+   SuccessMessage (encart de réussite intégré)
+   ============================================ */
+.success-message {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+  padding: var(--space-4) var(--space-5);
+  margin: var(--space-8) 0;
+  background: linear-gradient(135deg, #ECFDF5 0%, #F0FDF4 100%);
+  border: 1px solid #A7F3D0;
+  border-left: 4px solid #10B981;
+  border-radius: var(--radius-lg);
+  animation: success-fade-in 350ms ease;
+}
+.success-message__icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: 22px;
+  line-height: 1;
+}
+.success-message__body {
+  flex: 1;
+  min-width: 0;
+}
+.success-message__title {
+  margin: 0 0 var(--space-1);
+  font-size: 16px;
+  font-weight: 700;
+  color: #065F46;
+}
+.success-message__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #047857;
+}
+.dark .success-message {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.25);
+  border-left-color: #10B981;
+}
+.dark .success-message__title {
+  color: #6EE7B7;
+}
+.dark .success-message__text {
+  color: #A7F3D0;
+}
+@keyframes success-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ============================================

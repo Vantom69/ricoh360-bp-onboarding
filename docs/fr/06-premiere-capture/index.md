@@ -3,6 +3,8 @@ title: Réaliser votre première capture 360°
 description: Préparer la prise, lancer la capture et vérifier le résultat depuis l'application mobile.
 ---
 
+<JourneyTracker section="06" />
+
 # 6. Réaliser votre première capture 360°
 
 <JourneyStep
@@ -65,6 +67,10 @@ Aussitôt la capture terminée, le panorama s'affiche dans votre application. V�
 Si la prise vous convient, elle part **automatiquement vers le Cloud** dès que votre application retrouve du réseau.
 
 </JourneyStep>
+
+<SuccessMessage title="Premier panorama réalisé">
+Votre contenu 360° est maintenant disponible dans l'application. L'étape suivante vous montre comment le retrouver et l'exploiter depuis votre espace web.
+</SuccessMessage>
 
 ## Prochaine étape
 

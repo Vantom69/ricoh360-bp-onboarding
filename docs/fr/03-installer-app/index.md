@@ -3,6 +3,8 @@ title: Installer l'application mobile RICOH360
 description: Télécharger et installer l'application mobile RICOH360, le lien entre votre caméra et le Cloud.
 ---
 
+<JourneyTracker section="03" />
+
 # 3. Installer l'application mobile RICOH360
 
 <JourneyStep
@@ -42,6 +44,10 @@ L'application est disponible sur iOS (App Store) et Android (Google Play). Mette
 L'application vous demande de vous connecter à votre compte RICOH360 dès le premier démarrage. C'est l'étape suivante de votre parcours.
 
 </JourneyStep>
+
+<SuccessMessage title="Application installée">
+Vous pouvez maintenant vous connecter à votre compte RICOH360 et préparer votre première utilisation.
+</SuccessMessage>
 
 ## Prochaine étape
 

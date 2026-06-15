@@ -3,6 +3,8 @@ title: Retrouver et partager un panorama
 description: Accéder à un panorama sur la plateforme web et générer un lien de partage.
 ---
 
+<JourneyTracker section="08" />
+
 # 8. Retrouver et partager un panorama
 
 <JourneyStep
@@ -48,6 +50,10 @@ Pour les contenus sensibles, préférez les liens à durée limitée et protég�
 :::
 
 </JourneyStep>
+
+<SuccessMessage title="Vous maîtrisez les étapes essentielles">
+Vous savez maintenant installer l'application, connecter votre caméra, réaliser une capture et retrouver vos contenus. Vous pouvez commencer à utiliser RICOH360 sur le terrain ou continuer pour découvrir les fonctionnalités avancées.
+</SuccessMessage>
 
 ## Prochaine étape
 

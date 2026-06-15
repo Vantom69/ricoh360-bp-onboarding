@@ -3,6 +3,8 @@ title: Mes projets
 description: Suivre un site, un chantier ou une intervention dans la durée avec les projets.
 ---
 
+<JourneyTracker section="09" />
+
 # 9B. Mes projets
 
 <JourneyStep

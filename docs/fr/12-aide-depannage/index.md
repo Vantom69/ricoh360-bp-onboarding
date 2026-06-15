@@ -3,6 +3,8 @@ title: Aide et dépannage
 description: FAQ, voyants, mises à jour, problèmes courants et accès au support RICOH360.
 ---
 
+<JourneyTracker section="12" />
+
 # 12. Aide et dépannage
 
 <JourneyStep

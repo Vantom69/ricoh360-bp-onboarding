@@ -3,6 +3,8 @@ title: Connecter votre RICOH THETA X à l'application
 description: Procédure d'appairage Wi-Fi entre votre caméra THETA X et l'application mobile RICOH360.
 ---
 
+<JourneyTracker section="05" />
+
 # 5. Connecter votre RICOH THETA X à l'application
 
 <JourneyStep
@@ -38,6 +40,10 @@ La plupart des problèmes d'appairage se règlent en redémarrant la caméra pui
 Pour aller plus loin si le problème persiste : <SupportLink href="https://support.ricoh360.com/fr/faq/ricoh360-app-connection-001">Résoudre les problèmes de connexion caméra</SupportLink>
 
 </JourneyStep>
+
+<SuccessMessage title="Votre caméra est connectée">
+Vous pouvez maintenant réaliser votre premier panorama 360° depuis l'application.
+</SuccessMessage>
 
 ## Prochaine étape
 

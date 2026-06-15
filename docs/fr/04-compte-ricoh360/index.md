@@ -3,6 +3,8 @@ title: Se connecter à votre compte RICOH360
 description: Connexion à l'application mobile et à la plateforme web avec les mêmes identifiants.
 ---
 
+<JourneyTracker section="04" />
+
 # 4. Se connecter à votre compte RICOH360
 
 <JourneyStep
@@ -42,6 +44,10 @@ Votre référent commercial vous a transmis vos identifiants à la livraison de 
 - Vous n'avez **rien à synchroniser à la main**.
 
 </JourneyStep>
+
+<SuccessMessage title="Compte connecté">
+Votre espace RICOH360 est prêt à recevoir vos premiers contenus.
+</SuccessMessage>
 
 ## Prochaine étape
 

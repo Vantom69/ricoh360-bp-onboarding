@@ -3,6 +3,8 @@ title: Facility management et maintenance
 description: 5 bonnes pratiques pour utiliser RICOH360 en facility management et maintenance.
 ---
 
+<JourneyTracker section="11" />
+
 # 11C. Facility management et maintenance
 
 <JourneyStep

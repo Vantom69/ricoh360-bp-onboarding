@@ -3,6 +3,8 @@ title: Comprendre le lien avec RICOH360 Cloud
 description: Comment vos panoramas voyagent de la caméra à la plateforme web via le Cloud RICOH360.
 ---
 
+<JourneyTracker section="07" />
+
 # 7. Comprendre le lien avec RICOH360 Cloud
 
 <JourneyStep
