@@ -10,8 +10,10 @@
 - 3 commits propres push origin + preview, workflow Actions vert, HTTP 200 confirmé
 - Message Slack v2.4 prêt dans `docs-projet/slack-message-laura-v2.4.md`
 
-### Reportée
-- **Phase K** : checks ✓/●/○ dynamiques dans la sidebar + micro-animations item-level → traitée immédiatement après cette sauvegarde sur demande Thomas.
+### Phase K — finalement livrée dans la foulée
+- Composant `SidebarTracker.vue` : invisible, monté dans le slot `layout-top`. Scanne `.VPSidebar a[href]` au mount, à chaque changement de route, sur `COMPLETION_EVENT`, et sur mutations DOM (drawer mobile). Applique 3 classes : `journey-completed`, `journey-current`, `journey-todo`.
+- CSS `::before` dans `v2.css` : badges ✓ (bleu, fade-in 350ms), ● (accent, pulse 1800ms discret), ○ (gris). Dark mode complet. Font-weight 600 sur l'étape courante.
+- Commit `b7ac34a`, push origin + preview, deploy vert HTTP 200 en 1m16s.
 
 ## Previous session: 2026-06-10 (V2.3 — retours Laura ponctuels)
 

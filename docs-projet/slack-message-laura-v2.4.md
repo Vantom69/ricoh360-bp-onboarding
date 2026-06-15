@@ -10,7 +10,7 @@ J'ai intégré ton dernier retour (gamification + enrichissement contenu). Tu pe
 
 🔗 **https://vantom69.github.io/ricoh360-bp-onboarding-v2-preview/**
 
-Quatre chantiers cette fois :
+Cinq chantiers cette fois (gamification complète + contenu + CTAs) :
 
 **1. Une jauge de progression dans le menu latéral** ✅
 En haut du menu gauche, tu vois un encart « Votre progression — X sur 12 étapes » avec une barre qui se remplit. La jauge se met à jour à chaque page de parcours visitée et persiste entre les sessions (localStorage).
@@ -37,9 +37,13 @@ La page « Bienvenue » contient maintenant 6 sections claires :
 - Les fonctionnalités premium à découvrir (6 cartes cliquables vers les sections concernées)
 - Ce que vous allez apprendre (le bloc objectifs déjà existant, conservé)
 
-**Ce qui n'est pas encore fait — Phase K reportée**
+**5. Checks ✓/●/○ dans le menu + animations item-level** ✅
+Initialement reportés en Phase K, finalement livrés dans la foulée. Tu verras à côté de chaque étape du menu :
+- ✓ pour les étapes déjà parcourues
+- ● (avec une légère pulsation discrète) pour l'étape en cours
+- ○ pour les étapes restantes
 
-Les **checks ✓/●/○ à côté des étapes du menu** et les **micro-animations item par item** demandent un override de la sidebar VitePress (le DOM n'est pas adressable nativement). C'est jouable mais plus risqué techniquement, alors je l'ai mis en Phase K pour ne pas retarder cette livraison. On le fera dans une prochaine itération une fois que tu auras validé le reste.
+Les badges s'animent au fade-in et le statut courant est légèrement gras pour le repérer du coin de l'œil.
 
 **Quelques points à valider visuellement de ton côté** :
 - La jauge tient bien sur mobile (drawer sidebar)

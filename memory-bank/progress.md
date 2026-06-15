@@ -59,7 +59,7 @@
 - [x] Phase J.3 : harmonisation CTAs (bouée retirée + radius xl + espacement)
 - [x] Phase J.4 : enrichissement page bienvenue (6 nouveaux blocs : présentation BP, ce que comprend, RICOH Care, tableau comparatif 9 lignes, fonctionnalités premium 6 cartes cliquables)
 - [x] 3 commits 720952b + cd3e5d3 + b8d4c57 (slack) push origin + preview, deploy vert HTTP 200
-- [ ] Phase K : checks ✓/●/○ dynamiques sidebar + micro-animations item-level — démarrage immédiat
+- [x] Phase K : checks ✓/●/○ dynamiques sidebar (SidebarTracker.vue + CSS ::before + animations fade-in et pulse), commit b7ac34a, deploy vert HTTP 200
 
 ## In progress
 - [ ] Thomas transmet le message Slack v2.2 à Laura (docs-projet/slack-message-laura-v2.2.md)
@@ -100,4 +100,4 @@
 | 2026-06-09 | V2.1 | Retour Laura V1 traité : 25 médias intégrés (YouTube embed + HubSpot), 3 blocs FAQ dépannage ajoutés (allumage, LED A1, écran X), 7 URLs support réelles, grille de naturalisation FR + 3 pages témoins réécrites pour validation Laura. |
 | 2026-06-10 | V2.2 | Retour Thomas traité : mode nuit complet (custom.css + v2.css), retrait socialLinks GitHub (config.mts), naturalisation ton FR sur les 18 pages restantes. Laura validation ton OK. Branche v2-refonte poussée sur origin. Preview live HTTP 200. |
 | 2026-06-10 | V2.3 | Retours Laura ponctuels : (1) bloc explicatif Business Pack ajouté en bienvenue, (2) réponse FAQ Ricoh Care reformulée pour confirmer l'inclusion. 1 commit ea65fa0, push origin + preview, deploy vert. En attente du retour Laura sur V2.3. |
-| 2026-06-15 | V2.4 | Brief Laura V2 traité : Phase J gamification (jauge sidebar + tracker + 5 messages réussite) + harmonisation CTAs (retrait bouée + arrondi + espacement) + enrichissement bienvenue (6 nouveaux blocs : présentation BP, RICOH Care, comparatif, premium). 2 commits 720952b + cd3e5d3. Phase K (checks ✓/●/○ sidebar + animations) à enchaîner. |
+| 2026-06-15 | V2.4 | Brief Laura V2 traité : Phase J gamification (jauge sidebar + tracker + 5 messages réussite) + harmonisation CTAs (retrait bouée + arrondi + espacement) + enrichissement bienvenue (6 nouveaux blocs : présentation BP, RICOH Care, comparatif, premium). Phase K enchaînée dans la foulée : SidebarTracker scanne le DOM et applique ✓/●/○ aux items du menu, animations fade-in 350ms et pulse 1800ms. 4 commits 720952b + cd3e5d3 + b8d4c57 + b7ac34a. |
