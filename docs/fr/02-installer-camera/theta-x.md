@@ -1,5 +1,5 @@
 ---
-title: Installer votre RICOH THETA X
+title: Préparer votre RICOH THETA X
 description: Déballage, mise sous tension, charge et mise à jour du firmware de votre RICOH THETA X.
 prev:
   text: '1. Bienvenue'
@@ -11,7 +11,7 @@ next:
 
 <JourneyTracker section="02" />
 
-# 2. Installer votre RICOH THETA X
+# 2. Préparer votre RICOH THETA X
 
 <ImagePlaceholder id="media:theta-x-product" variant="product" />
 

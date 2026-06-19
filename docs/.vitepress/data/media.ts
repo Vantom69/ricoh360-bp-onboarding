@@ -20,7 +20,7 @@ export interface MediaEntry {
 }
 
 export const media: Record<string, MediaEntry> = {
-  // Section 2 — Installer la caméra
+  // Section 2 — Préparer la caméra
   'media:firmware-update': {
     id: 'media:firmware-update',
     title: 'Mettre à jour sa caméra',

@@ -37,7 +37,7 @@ export default defineConfig({
           ],
         },
         {
-          text: '2. Installer votre caméra',
+          text: '2. Préparer votre caméra',
           collapsed: false,
           items: [
             { text: 'RICOH THETA X', link: '/fr/02-installer-camera/theta-x' },

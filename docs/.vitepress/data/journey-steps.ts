@@ -14,7 +14,7 @@ export interface JourneyStep {
 
 export const JOURNEY_STEPS: JourneyStep[] = [
   { number: '01', label: 'Bienvenue', pathPrefix: '/fr/01-bienvenue' },
-  { number: '02', label: 'Installer la caméra', pathPrefix: '/fr/02-installer-camera' },
+  { number: '02', label: 'Préparer la caméra', pathPrefix: '/fr/02-installer-camera' },
   { number: '03', label: 'Installer l\'application', pathPrefix: '/fr/03-installer-app' },
   { number: '04', label: 'Compte RICOH360', pathPrefix: '/fr/04-compte-ricoh360' },
   { number: '05', label: 'Connecter la caméra', pathPrefix: '/fr/05-connecter-camera' },
