@@ -36,6 +36,17 @@ onBeforeUnmount(() => {
 
 const completedCount = computed(() => completedSteps.value.size)
 const percent = computed(() => Math.round((completedCount.value / TOTAL_STEPS) * 100))
+
+function resetProgress() {
+  if (typeof window === 'undefined') return
+  try {
+    window.localStorage.removeItem(STORAGE_KEY)
+    completedSteps.value = new Set()
+    window.dispatchEvent(new CustomEvent(COMPLETION_EVENT, { detail: { reset: true } }))
+  } catch {
+    // ignore
+  }
+}
 </script>
 
 <template>
@@ -48,5 +59,14 @@ const percent = computed(() => Math.round((completedCount.value / TOTAL_STEPS) *
       <div class="journey-progress__bar-fill" :style="{ width: percent + '%' }"></div>
     </div>
     <p class="journey-progress__percent">{{ percent }}&nbsp;% complété</p>
+    <button
+      v-if="completedCount > 0"
+      type="button"
+      class="journey-progress__reset"
+      @click="resetProgress"
+      title="Réinitialiser votre progression"
+    >
+      ↺ Réinitialiser
+    </button>
   </aside>
 </template>

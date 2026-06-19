@@ -730,6 +730,32 @@
   color: var(--ricoh-gray-3);
   text-align: right;
 }
+.journey-progress__reset {
+  display: block;
+  width: 100%;
+  margin-top: var(--space-3);
+  padding: var(--space-1) var(--space-2);
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-size: 11px;
+  color: var(--ricoh-gray-4);
+  text-align: center;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.journey-progress__reset:hover {
+  color: var(--ricoh-blue-1);
+  background: rgba(53, 50, 202, 0.05);
+}
+.dark .journey-progress__reset {
+  color: var(--ricoh-gray-6);
+}
+.dark .journey-progress__reset:hover {
+  color: var(--ricoh-blue-light-1);
+  background: rgba(174, 198, 255, 0.08);
+}
 .dark .journey-progress {
   background: rgba(84, 78, 255, 0.06);
   border-color: rgba(174, 198, 255, 0.2);
