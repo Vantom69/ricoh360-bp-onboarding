@@ -18,8 +18,10 @@ function readCompleted(): Set<string> {
 }
 
 function sectionForPath(path: string): string | null {
+  // includes (et pas startsWith) pour matcher aussi les hrefs DOM qui contiennent la base URL
+  // ex : /ricoh360-bp-onboarding-v2-preview/fr/01-bienvenue/ doit matcher pathPrefix /fr/01-bienvenue
   for (const step of JOURNEY_STEPS) {
-    if (path.startsWith(step.pathPrefix)) return step.number
+    if (path.includes(step.pathPrefix)) return step.number
   }
   return null
 }
