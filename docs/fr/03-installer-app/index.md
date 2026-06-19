@@ -43,6 +43,12 @@ L'application est disponible sur iOS (App Store) et Android (Google Play). Mette
 
 L'application vous demande de vous connecter à votre compte RICOH360 dès le premier démarrage. C'est l'étape suivante de votre parcours.
 
+::: info Autorisations à prévoir
+Au premier lancement et lors de la connexion à votre caméra, l'application vous demandera plusieurs autorisations (Bluetooth, services de localisation, accès au réseau local…) nécessaires à son bon fonctionnement.
+
+Le détail complet par système d'exploitation est expliqué à l'étape [5. Connecter votre caméra](/fr/05-connecter-camera/theta-x). Pas d'inquiétude : on vous guide à ce moment-là.
+:::
+
 </JourneyStep>
 
 <SuccessMessage title="Application installée">
