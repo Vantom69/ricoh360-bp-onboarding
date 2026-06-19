@@ -1,49 +1,56 @@
 <script setup lang="ts">
+import { useData } from 'vitepress'
+import { t } from '../../data/i18n'
 import Accordion from './Accordion.vue'
+
+const { lang } = useData()
 </script>
 
 <template>
   <section class="permissions-block">
-    <h2>Autoriser l'application à se connecter à votre caméra</h2>
+    <h2>{{ t('permissions.title', lang) }}</h2>
 
     <p>
-      S'il s'agit de votre <strong>première connexion</strong> entre une caméra RICOH THETA et l'application RICOH360,
-      appuyez sur <strong>Register</strong> dans l'application.
+      {{ t('permissions.first_connection_p1_part1', lang) }}
+      <strong>{{ t('permissions.first_connection_part2', lang) }}</strong>
+      {{ t('permissions.first_connection_p1_part3', lang) }}
+      <strong>{{ t('permissions.register_button', lang) }}</strong>
+      {{ t('permissions.in_the_app', lang) }}
     </p>
 
     <p>
-      Si certaines autorisations système manquent, un message s'affiche dans les paramètres de connexion Wi-Fi avec
-      une <strong>coche blanche</strong> à côté des permissions insuffisantes. Appuyez sur cette coche pour ouvrir les
-      réglages de votre téléphone et accorder les autorisations nécessaires. Si toutes les permissions sont déjà
-      accordées, ce message ne s'affiche pas.
+      {{ t('permissions.missing_permissions_p1', lang) }}
+      <strong>{{ t('permissions.white_checkmark', lang) }}</strong>
+      {{ t('permissions.missing_permissions_p2', lang) }}
     </p>
 
-    <p>Voici les autorisations à vérifier selon votre système :</p>
+    <p>{{ t('permissions.list_intro', lang) }}</p>
 
-    <Accordion title="Autorisations nécessaires sur iOS">
+    <Accordion :title="t('permissions.ios_accordion_title', lang)">
       <ul class="permissions-block__list">
-        <li><strong>Bluetooth</strong> activé</li>
-        <li><strong>Accès Bluetooth</strong> autorisé pour RICOH360 App</li>
-        <li><strong>Services de localisation</strong> activés</li>
-        <li><strong>Accès à la localisation</strong> autorisé pour RICOH360 App</li>
-        <li><strong>Accès au réseau local</strong> autorisé pour RICOH360 App</li>
+        <li v-html="t('permissions.ios_bluetooth', lang)"></li>
+        <li v-html="t('permissions.ios_bluetooth_access', lang)"></li>
+        <li v-html="t('permissions.ios_location_services', lang)"></li>
+        <li v-html="t('permissions.ios_location_access', lang)"></li>
+        <li v-html="t('permissions.ios_local_network', lang)"></li>
       </ul>
     </Accordion>
 
-    <Accordion title="Autorisations nécessaires sur Android">
+    <Accordion :title="t('permissions.android_accordion_title', lang)">
       <ul class="permissions-block__list">
-        <li><strong>Wi-Fi</strong> activé</li>
-        <li><strong>Bluetooth</strong> activé</li>
-        <li><strong>Services de localisation</strong> activés</li>
-        <li><strong>Accès à la localisation</strong> autorisé dans les réglages de RICOH360 App</li>
-        <li><strong>Localisation précise</strong> activée</li>
-        <li><strong>Accès aux appareils à proximité</strong> autorisé</li>
+        <li v-html="t('permissions.android_wifi', lang)"></li>
+        <li v-html="t('permissions.android_bluetooth', lang)"></li>
+        <li v-html="t('permissions.android_location_services', lang)"></li>
+        <li v-html="t('permissions.android_location_access', lang)"></li>
+        <li v-html="t('permissions.android_precise_location', lang)"></li>
+        <li v-html="t('permissions.android_nearby_devices', lang)"></li>
       </ul>
     </Accordion>
 
     <p>
-      Une fois les autorisations configurées, appuyez sur <strong>Done</strong> pour finaliser et revenir à la
-      procédure de connexion.
+      {{ t('permissions.done_p1', lang) }}
+      <strong>{{ t('permissions.done_button', lang) }}</strong>
+      {{ t('permissions.done_p2', lang) }}
     </p>
   </section>
 </template>

@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { useData } from 'vitepress'
+import { t } from '../../data/i18n'
+
+const { lang } = useData()
+
 defineProps<{
   title?: string
   icon?: string
@@ -19,6 +24,6 @@ defineProps<{
     <div class="card__body">
       <slot />
     </div>
-    <span v-if="link" class="card__cta">{{ cta || 'En savoir plus →' }}</span>
+    <span v-if="link" class="card__cta">{{ cta || t('card.default_cta', lang) }}</span>
   </component>
 </template>

@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useData } from 'vitepress'
 import { media } from '../../data/media'
+import { t } from '../../data/i18n'
+
+const { lang } = useData()
 
 const props = defineProps<{
   id: string
@@ -54,13 +58,13 @@ const youtubeEmbedUrl = computed(() =>
         preload="metadata"
         :src="entry.url"
       >
-        Votre navigateur ne prend pas en charge la lecture vidéo.
+        {{ t('video.unsupported', lang) }}
       </video>
     </div>
     <div v-else class="media__placeholder" :data-status="entry.status">
       <div class="media__placeholder-icon" aria-hidden="true">▶</div>
       <div class="media__placeholder-body">
-        <span class="media__placeholder-label">Vidéo à intégrer</span>
+        <span class="media__placeholder-label">{{ t('video.placeholder_label', lang) }}</span>
         <p class="media__placeholder-title">{{ entry.title }}</p>
         <span class="media__placeholder-id">{{ entry.id }}</span>
       </div>
@@ -70,6 +74,6 @@ const youtubeEmbedUrl = computed(() =>
     </figcaption>
   </figure>
   <div v-else class="media media--missing">
-    Média introuvable&nbsp;: <code>{{ id }}</code>
+    {{ t('video.not_found', lang) }}&nbsp;: <code>{{ id }}</code>
   </div>
 </template>

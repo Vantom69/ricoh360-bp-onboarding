@@ -1,14 +1,20 @@
 <script setup lang="ts">
-const nodes = [
-  { id: 'camera', label: 'Caméra', icon: '📷' },
-  { id: 'app', label: 'Application mobile', icon: '📱' },
-  { id: 'cloud', label: 'RICOH360 Cloud', icon: '☁️' },
-  { id: 'web', label: 'Plateforme web', icon: '💻' },
-]
+import { computed } from 'vue'
+import { useData } from 'vitepress'
+import { t } from '../../data/i18n'
+
+const { lang } = useData()
+
+const nodes = computed(() => [
+  { id: 'camera', label: t('cloud_flow.camera', lang.value), icon: '📷' },
+  { id: 'app', label: t('cloud_flow.mobile_app', lang.value), icon: '📱' },
+  { id: 'cloud', label: t('cloud_flow.cloud', lang.value), icon: '☁️' },
+  { id: 'web', label: t('cloud_flow.web_platform', lang.value), icon: '💻' },
+])
 </script>
 
 <template>
-  <div class="cloud-flow" role="img" aria-label="Caméra envoie vers l'app mobile, qui pousse vers le Cloud, accessible depuis la plateforme web">
+  <div class="cloud-flow" role="img" :aria-label="t('cloud_flow.aria_label', lang)">
     <ol class="cloud-flow__chain">
       <li v-for="(node, index) in nodes" :key="node.id" class="cloud-flow__step">
         <div class="cloud-flow__bubble">
@@ -19,7 +25,7 @@ const nodes = [
       </li>
     </ol>
     <p class="cloud-flow__caption">
-      Vos panoramas voyagent automatiquement de la caméra vers la plateforme web via votre application mobile et le Cloud RICOH360.
+      {{ t('cloud_flow.caption', lang) }}
     </p>
   </div>
 </template>

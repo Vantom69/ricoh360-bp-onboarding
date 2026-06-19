@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { withBase } from 'vitepress'
+import { withBase, useData } from 'vitepress'
+import { t } from '../../data/i18n'
+
+const { lang } = useData()
 
 withDefaults(
   defineProps<{
@@ -19,7 +22,7 @@ withDefaults(
       <img
         class="qr-pair__code"
         :src="withBase('/images/v2/qr-appstore.png')"
-        alt="QR code App Store RICOH360 THETA App pour iOS"
+        :alt="t('qr.appstore_alt', lang)"
         loading="lazy"
         width="160"
         height="160"
@@ -30,7 +33,7 @@ withDefaults(
       <img
         class="qr-pair__code"
         :src="withBase('/images/v2/qr-playstore.png')"
-        alt="QR code Google Play RICOH360 THETA App pour Android"
+        :alt="t('qr.playstore_alt', lang)"
         loading="lazy"
         width="160"
         height="160"

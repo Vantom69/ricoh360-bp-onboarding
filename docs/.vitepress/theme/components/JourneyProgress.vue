@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { computed, onMounted, onBeforeUnmount, ref } from 'vue'
+import { useData } from 'vitepress'
 import { TOTAL_STEPS, STORAGE_KEY, COMPLETION_EVENT } from '../../data/journey-steps'
+import { t } from '../../data/i18n'
 
+const { lang } = useData()
 const completedSteps = ref<Set<string>>(new Set())
 
 function loadProgress() {
@@ -50,23 +53,23 @@ function resetProgress() {
 </script>
 
 <template>
-  <aside class="journey-progress" aria-label="Votre progression dans l'onboarding">
-    <p class="journey-progress__label">Votre progression</p>
+  <aside class="journey-progress" :aria-label="t('journey_progress.aria_label', lang)">
+    <p class="journey-progress__label">{{ t('journey_progress.label', lang) }}</p>
     <p class="journey-progress__count">
-      <strong>{{ completedCount }}</strong> sur {{ TOTAL_STEPS }} étapes
+      <strong>{{ completedCount }}</strong> {{ t('journey_progress.count_separator', lang) }} {{ TOTAL_STEPS }} {{ t('journey_progress.steps_suffix', lang) }}
     </p>
     <div class="journey-progress__bar" role="progressbar" :aria-valuenow="percent" aria-valuemin="0" aria-valuemax="100">
       <div class="journey-progress__bar-fill" :style="{ width: percent + '%' }"></div>
     </div>
-    <p class="journey-progress__percent">{{ percent }}&nbsp;% complété</p>
+    <p class="journey-progress__percent">{{ percent }}&nbsp;% {{ t('journey_progress.percent_completed', lang) }}</p>
     <button
       v-if="completedCount > 0"
       type="button"
       class="journey-progress__reset"
       @click="resetProgress"
-      title="Réinitialiser votre progression"
+      :title="t('journey_progress.reset_title', lang)"
     >
-      ↺ Réinitialiser
+      {{ t('journey_progress.reset', lang) }}
     </button>
   </aside>
 </template>

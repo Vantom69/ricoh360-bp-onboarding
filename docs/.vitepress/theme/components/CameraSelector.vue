@@ -1,6 +1,11 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import { withBase } from 'vitepress'
+import { ref, computed, onMounted } from 'vue'
+import { withBase, useData } from 'vitepress'
+import { t, detectLocale } from '../../data/i18n'
+
+const { lang } = useData()
+const locale = computed(() => detectLocale(lang.value))
+const langPrefix = computed(() => `/${locale.value}`)
 
 const selected = ref<string | null>(null)
 
@@ -21,12 +26,12 @@ function selectModel(model: 'theta-x' | 'theta-a1') {
 <template>
   <div class="camera-selector">
     <p class="camera-selector__intro">
-      Quelle caméra avez-vous reçue avec votre Business Pack ?
+      {{ t('camera_selector.intro', lang) }}
     </p>
 
     <div class="camera-selector__cards">
       <a
-        :href="withBase('/fr/02-installer-camera/theta-x')"
+        :href="withBase(`${langPrefix}/02-installer-camera/theta-x`)"
         class="camera-card"
         :class="{ 'camera-card--selected': selected === 'theta-x' }"
         @click="selectModel('theta-x')"
@@ -36,13 +41,13 @@ function selectModel(model: 'theta-x' | 'theta-a1') {
         </div>
         <h3 class="camera-card__title">RICOH THETA X</h3>
         <p class="camera-card__desc">
-          Caméra 360° avec écran tactile et acquisition rapide.
+          {{ t('camera_selector.theta_x_desc', lang) }}
         </p>
-        <span class="camera-card__cta">Démarrer avec la THETA X →</span>
+        <span class="camera-card__cta">{{ t('camera_selector.theta_x_cta', lang) }}</span>
       </a>
 
       <a
-        :href="withBase('/fr/02-installer-camera/theta-a1')"
+        :href="withBase(`${langPrefix}/02-installer-camera/theta-a1`)"
         class="camera-card"
         :class="{ 'camera-card--selected': selected === 'theta-a1' }"
         @click="selectModel('theta-a1')"
@@ -52,14 +57,14 @@ function selectModel(model: 'theta-x' | 'theta-a1') {
         </div>
         <h3 class="camera-card__title">RICOH THETA A1</h3>
         <p class="camera-card__desc">
-          Caméra 360° compacte, pensée pour la mobilité terrain.
+          {{ t('camera_selector.theta_a1_desc', lang) }}
         </p>
-        <span class="camera-card__cta">Démarrer avec la THETA A1 →</span>
+        <span class="camera-card__cta">{{ t('camera_selector.theta_a1_cta', lang) }}</span>
       </a>
     </div>
 
     <p v-if="selected" class="camera-selector__hint">
-      Vous avez choisi <strong>{{ selected === 'theta-x' ? 'RICOH THETA X' : 'RICOH THETA A1' }}</strong>. Votre parcours est désormais adapté à votre modèle.
+      {{ t('camera_selector.you_selected', lang) }} <strong>{{ selected === 'theta-x' ? 'RICOH THETA X' : 'RICOH THETA A1' }}</strong>. {{ t('camera_selector.journey_adapted', lang) }}
     </p>
   </div>
 </template>
