@@ -60,9 +60,15 @@ Le voyant de charge s'allume. Comptez environ 2 heures pour une charge complète
 
 Avant votre première capture, **vérifiez que la caméra utilise la dernière version du firmware**. Une mise à jour améliore la stabilité, ajoute des fonctionnalités et corrige les défauts connus.
 
+La mise à jour s'effectue depuis l'**application mobile RICOH360** (que vous installerez à l'étape suivante) ou depuis l'**application PC/Mac RICOH360**. Si vous n'avez pas encore d'application installée, pas d'inquiétude : vous pourrez revenir mettre à jour votre caméra juste après, ou l'application vous proposera la mise à jour automatiquement lors de la première connexion.
+
 <VideoPlaceholder id="media:firmware-update" />
 
-La vidéo ci-dessus vous montre la procédure complète.
+La vidéo ci-dessus montre la procédure complète depuis l'application mobile.
+
+::: info Pas encore d'application mobile ?
+La mise à jour est aussi disponible depuis l'application PC/Mac RICOH360, téléchargeable sur le site support RICOH360.
+:::
 
 </JourneyStep>
 
