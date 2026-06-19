@@ -1,6 +1,55 @@
 # Active Context
 
-## Last session: 2026-06-19 (V2.5 — Brief Laura V3 + retours Thomas in-line)
+## Last session: 2026-06-19 (V2.6 — retour Laura autorisations + V2.7 — multi-langue Phase 1)
+
+### V2.6 — Retour Laura cohérence MAJ firmware + autorisations app
+- Section 02 « Préparer votre caméra » : reformulation de la MAJ firmware pour ne plus présupposer l'app mobile installée. Mention de la possibilité de MAJ via app PC/Mac.
+- Section 03 « Installer l'app » : encart info qui annonce les autorisations à prévoir et renvoie vers section 5.
+- Section 05 « Connecter votre caméra » : composant Vue **PermissionsBlock** créé (DRY pour theta-x et theta-a1). Couvre Register, coche blanche, 2 accordions iOS (5 items) / Android (6 items), bouton Done.
+- URL réelle du centre de téléchargement RICOH360 (`support.ricoh360.com/fr/app-download`) en SupportLink, fournie par Thomas.
+- Commits : `3d41054`, `3a6d4da`, `b0515a2`, `8aebefc`, `b2d3ec3`.
+
+### V2.7 — Multi-langue Phase 1 (ajout EN, foundation pour ES + JP)
+- **Config locales VitePress** : `locales: { fr, en }` avec sidebar/nav/footer/search/outline/docFooter/lastUpdated dupliqués par langue. VitePress affiche nativement un dropdown sélecteur de langue dans la nav top.
+- **Système i18n centralisé** : nouveau `docs/.vitepress/data/i18n.ts` (68 clés × 2 langues + helper `t(key, lang)` + `detectLocale`). Refactor de **9 composants Vue** pour utiliser `useData().lang` au lieu de strings hardcodées : JourneyProgress, JourneyStep, CameraSelector, Card, CloudFlowDiagram, VideoPlaceholder, ImagePlaceholder, QRCodePair, PermissionsBlock.
+- **journey-steps.ts lang-agnostic** : pathPrefix passé de `/fr/01-bienvenue` à `/01-bienvenue` (SidebarTracker matche en includes, fonctionne pour les 2 langues sans modification).
+- **Landing racine** : nouveau composant **LanguageRedirect.vue** qui redirige au mount via `useData().site.base + window.location.replace` selon `navigator.language` (bug détecté en review : le `<script>` inline markdown était strippé par VitePress, fix via composant Vue).
+- **Grille de naturalisation EN** dans `docs-projet/grille-naturalisation-ton-en.md` (miroir de la grille FR).
+- **22 pages EN** dans `docs/en/` miroir des 22 pages FR. Vocabulaire métier strict (RICOH360, RICOH THETA X/A1, Cloud, Business Pack, RICOH Care). Slugs URL conservés FR (`/en/02-installer-camera/theta-x`) pour cohérence et simplicité.
+- Commits : `f0a0679` (infra), `10ba208` (composants), `9594bcd` (traduction), `b42e242` (slack), `8a8c4bb` (fix redirect).
+- **Review V2.7 EN passée** : 1 bug fixé (redirect), aucun calque FR, aucun lien interne `/fr/` cassé, i18n 100% couvert, frontmatters propres, HTTP 200 partout.
+
+### Décisions cadrées
+- **URL pattern multi-langue** : préfixe pour toutes les langues (`/fr/`, `/en/`, futurs `/es/`, `/ja/`). Racine `/` redirige selon navigateur.
+- **Stratégie de traduction** : Claude batch + spot-check Thomas (1 boucle max).
+- **Slugs URL** : pas traduits (cohérence avec FR, plus simple à maintenir).
+- **Vidéos et visuels** : gardés FR pour V1 EN. À demander à Ricoh Japon des versions EN à terme.
+- **Stratégie de preview** : Thomas garde V2.7 en ligne sur preview malgré la review FR Laura — il dira à Laura de se focaliser sur FR pour sa première review.
+- **Composants i18n** : système centralisé `data/i18n.ts` (Type Locale extensible : fr | en | es | ja).
+
+### Current state (fin session 2026-06-19)
+- Working tree clean, sur branche `v2-refonte`
+- HEAD `8a8c4bb` = origin/v2-refonte = preview/main
+- main `a08e93e` (V1 + README V2.4) — pas touché
+- Tag `v1.0` intact
+- Preview V2.7 LIVE multi-langue HTTP 200
+- 15 composants Vue (les 14 d'avant + LanguageRedirect)
+- 4 nouveaux artefacts docs-projet : grille-naturalisation-ton-en.md, slack-message-laura-v2.6.md, slack-message-laura-v2.7.md
+
+### What to do next session
+1. **Laura review V2.6 FR** (corrections autorisations + MAJ firmware + URL PC/Mac) — message Slack v2.6 prêt à envoyer.
+2. Recommandation Thomas : dire à Laura de se focaliser sur la version FR malgré le sélecteur de langue visible (V2.7 multi-langue est en cours, pas la priorité pour son spot-check).
+3. **Validation SupportLinks EN** : les `support.ricoh360.com/fr/...` côté pages EN — à demander à Laura si les pages existent en `/en/...` côté Ricoh support.
+4. **Spot-check EN éventuel** (par Thomas ou EN-native) avant ouverture du chantier ES/JP.
+5. Si validation finale Laura → **Phase E** : merge `v2-refonte` → `main`, tag `v2.0`, suppression du repo preview, MAJ README final, planification ES + JP.
+
+### Sticky reminders (questions ouvertes longue durée)
+- 6 questions structurantes audit V2.1 toujours ouvertes
+- URL support « améliorer la qualité de capture » jamais fournie par Laura
+- Sémantique checks sidebar (page cliquée vs linéaire strict) — Laura à arbitrer
+- Vidéos/visuels EN — à demander Ricoh Japon
+
+## Previous session: 2026-06-19 (V2.5 — Brief Laura V3 + retours Thomas in-line)
 
 ### What was accomplished (V2.5)
 - **Fix bug SidebarTracker** (`ede4600`) : `sectionForPath` utilisait `startsWith` qui ne matchait pas les hrefs DOM contenant la base URL `/ricoh360-bp-onboarding-v2-preview/...`. Passage à `includes` → les checks ✓/●/○ s'affichent enfin sur la preview. Sémantique « page cliquée = ✓ » conservée (validée Thomas vs spec linéaire stricte Laura).
