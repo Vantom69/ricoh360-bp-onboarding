@@ -285,13 +285,18 @@
 .media--image img {
   display: block;
   max-width: 100%;
+  /* Contrainte de hauteur : l'illustration doit tenir dans le viewport sans forcer le scroll */
+  max-height: 60vh;
+  width: auto;
   height: auto;
+  margin: 0 auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
 /* Variante 'product' : visuel produit (photo caméra), taille contenue et centrée */
 .media--product img {
-  max-width: 280px;
+  max-width: 140px;
+  max-height: none;
   margin: 0 auto;
   box-shadow: none;
   border-radius: var(--radius-md);
