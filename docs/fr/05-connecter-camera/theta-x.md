@@ -1,6 +1,12 @@
 ---
 title: Connecter votre RICOH THETA X à l'application
 description: Procédure d'appairage Wi-Fi entre votre caméra THETA X et l'application mobile RICOH360.
+prev:
+  text: '4. Se connecter à votre compte'
+  link: /fr/04-compte-ricoh360/
+next:
+  text: '6. Réaliser votre première capture 360°'
+  link: /fr/06-premiere-capture/
 ---
 
 <JourneyTracker section="05" />
@@ -30,6 +36,8 @@ Une fois la connexion établie, vous voyez dans l'application :
 - Le **nom de votre caméra**
 - Son **niveau de batterie**
 - Son **espace de stockage disponible**
+
+<ImagePlaceholder id="media:verify-connection" />
 
 Si l'un de ces éléments n'apparaît pas, relancez la connexion.
 

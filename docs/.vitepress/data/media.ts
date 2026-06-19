@@ -251,6 +251,48 @@ export const media: Record<string, MediaEntry> = {
     status: 'integrated',
     url: 'https://8435734.fs1.hubspotusercontent-na1.net/hubfs/8435734/Inviter%20un%20utilisateur.png',
   },
+
+  // Visuels produit et UI livrés par Laura V3 (2026-06-18)
+  'media:theta-x-product': {
+    id: 'media:theta-x-product',
+    title: 'Caméra RICOH THETA X',
+    type: 'image',
+    section: '02',
+    status: 'integrated',
+    url: 'https://8435734.fs1.hubspotusercontent-na1.net/hubfs/8435734/THETAXPNJ.png',
+  },
+  'media:theta-a1-product': {
+    id: 'media:theta-a1-product',
+    title: 'Caméra RICOH THETA A1',
+    type: 'image',
+    section: '02',
+    status: 'integrated',
+    url: 'https://8435734.fs1.hubspotusercontent-na1.net/hubfs/8435734/THETAA1PNJ.png',
+  },
+  'media:verify-connection': {
+    id: 'media:verify-connection',
+    title: 'Écran de vérification de connexion de la caméra',
+    type: 'image',
+    section: '05',
+    status: 'integrated',
+    url: 'https://8435734.fs1.hubspotusercontent-na1.net/hubfs/8435734/Capture%20d%E2%80%99%C3%A9cran%202026-06-18%20%C3%A0%2015.39.09.png',
+  },
+  'media:annotation-interface': {
+    id: 'media:annotation-interface',
+    title: 'Interface d\'annotation dans RICOH360',
+    type: 'image',
+    section: '10A',
+    status: 'integrated',
+    url: 'https://8435734.fs1.hubspotusercontent-na1.net/hubfs/8435734/Capture%20d%E2%80%99%C3%A9cran%202026-06-18%20%C3%A0%2011.25.27.png',
+  },
+  'media:blur-interface': {
+    id: 'media:blur-interface',
+    title: 'Fonction de floutage des personnes dans RICOH360',
+    type: 'image',
+    section: '10D',
+    status: 'integrated',
+    url: 'https://8435734.fs1.hubspotusercontent-na1.net/hubfs/8435734/Capture%20d%E2%80%99%C3%A9cran%202026-06-18%20%C3%A0%2015.46.06.png',
+  },
 }
 
 export function getMedia(id: string): MediaEntry | undefined {

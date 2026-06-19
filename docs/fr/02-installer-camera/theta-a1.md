@@ -1,11 +1,19 @@
 ---
 title: Installer votre RICOH THETA A1
 description: Déballage, mise sous tension, charge et mise à jour du firmware de votre RICOH THETA A1.
+prev:
+  text: '1. Bienvenue'
+  link: /fr/01-bienvenue/
+next:
+  text: "3. Installer l'application mobile"
+  link: /fr/03-installer-app/
 ---
 
 <JourneyTracker section="02" />
 
 # 2. Installer votre RICOH THETA A1
+
+<ImagePlaceholder id="media:theta-a1-product" />
 
 <JourneyStep
   number="2B"
