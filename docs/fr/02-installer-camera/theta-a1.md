@@ -67,7 +67,9 @@ La mise à jour s'effectue depuis l'**application mobile RICOH360** (que vous in
 La vidéo ci-dessus montre la procédure complète depuis l'application mobile.
 
 ::: info Pas encore d'application mobile ?
-La mise à jour est aussi disponible depuis l'application PC/Mac RICOH360, téléchargeable sur le site support RICOH360.
+La mise à jour est aussi disponible depuis l'application PC/Mac RICOH360 :
+
+<SupportLink href="https://support.ricoh360.com/fr/app-download">Télécharger les applications RICOH360</SupportLink>
 :::
 
 </JourneyStep>
