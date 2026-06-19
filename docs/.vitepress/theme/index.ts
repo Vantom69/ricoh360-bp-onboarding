@@ -19,6 +19,7 @@ import JourneyProgress from './components/JourneyProgress.vue'
 import JourneyTracker from './components/JourneyTracker.vue'
 import SuccessMessage from './components/SuccessMessage.vue'
 import SidebarTracker from './components/SidebarTracker.vue'
+import PermissionsBlock from './components/PermissionsBlock.vue'
 
 export default {
   extends: DefaultTheme,
@@ -43,5 +44,6 @@ export default {
     app.component('SupportLink', SupportLink)
     app.component('JourneyTracker', JourneyTracker)
     app.component('SuccessMessage', SuccessMessage)
+    app.component('PermissionsBlock', PermissionsBlock)
   },
 } satisfies Theme

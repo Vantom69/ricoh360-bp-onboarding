@@ -29,6 +29,8 @@ next:
 4. **Sélectionnez votre caméra** dans la liste détectée par l'application.
 5. Validez : la caméra est associée à votre compte.
 
+<PermissionsBlock />
+
 ## Vérifier que la connexion fonctionne
 
 Une fois la connexion établie, vous voyez dans l'application :
