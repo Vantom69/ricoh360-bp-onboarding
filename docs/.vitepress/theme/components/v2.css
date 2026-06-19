@@ -466,31 +466,17 @@
 .qr-pair__item:hover {
   border-color: var(--ricoh-blue-2);
 }
-.qr-pair__placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-1);
+.qr-pair__code {
+  display: block;
   width: 160px;
   height: 160px;
-  background: var(--ricoh-blue-light-3);
+  background: #ffffff;
   border-radius: var(--radius-md);
-  color: var(--ricoh-gray-3);
-  font-size: 12px;
-  text-align: center;
+  padding: var(--space-2);
 }
-.qr-pair__placeholder span:first-child {
-  font-size: 32px;
-}
-.qr-pair__placeholder-label {
-  font-weight: 600;
-  color: var(--ricoh-blue-1);
-}
-.qr-pair__placeholder small {
-  font-size: 10px;
-  color: var(--ricoh-gray-4);
-  font-style: italic;
+.dark .qr-pair__code {
+  background: #ffffff;
+  /* fond toujours blanc pour la scannabilité, même en dark mode */
 }
 .qr-pair__caption {
   font-weight: 600;
