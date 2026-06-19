@@ -1,6 +1,40 @@
 # Active Context
 
-## Last session: 2026-06-15 (V2.4 — gamification Phase J + enrichissement bienvenue)
+## Last session: 2026-06-19 (V2.5 — Brief Laura V3 + retours Thomas in-line)
+
+### What was accomplished (V2.5)
+- **Fix bug SidebarTracker** (`ede4600`) : `sectionForPath` utilisait `startsWith` qui ne matchait pas les hrefs DOM contenant la base URL `/ricoh360-bp-onboarding-v2-preview/...`. Passage à `includes` → les checks ✓/●/○ s'affichent enfin sur la preview. Sémantique « page cliquée = ✓ » conservée (validée Thomas vs spec linéaire stricte Laura).
+- **Nav X↔A1 corrigée** (`633f0b0`) : override `prev`/`next` VitePress via frontmatter sur les 4 pages X/A1. Plus jamais d'enchaînement X → A1 ni A1 → X.
+- **5 visuels Laura intégrés** (`633f0b0`) : `media.ts` étendu avec 5 entrées HubSpot (caméras X/A1, vérification connexion, annotation, floutage). Intégration via `<ImagePlaceholder>` sur 6 pages (02-x, 02-a1, 05-x, 05-a1, 10A annotations, 10D flouter).
+- **Bouton « ↺ Réinitialiser »** (`7afe97a`) : ajouté dans le bloc JourneyProgress en bas de la jauge. Vide localStorage des étapes cliquées + dispatch event pour rafraîchir checks et jauge. N'apparaît que si au moins 1 étape terminée.
+- **Variant 'product' sur ImagePlaceholder** (`4585f6c` puis `d4fcbb6`) : prop `variant` optionnelle qui ajoute classe `media--${variant}`. Photos caméras passées en `variant="product"` à **max-width 140px** centrées (réduction de 280px → 140px après retour Thomas « trop grosses »).
+- **QR codes réels** (`20b229d` puis `3f558c2`) : génération PNG via Python qrcode, stockés dans `docs/public/images/v2/` (`qr-appstore.png`, `qr-playstore.png`). URLs : `apps.apple.com/fr/app/ricoh360-theta-app/id6446307957` et `play.google.com/store/apps/details?id=com.ricoh360.mobile`. Composant QRCodePair refactoré. Mise en page corrigée (padding parasite retiré, dark mode fond blanc préservé pour scannabilité).
+- **« Installer » → « Préparer »** (`57a9964`) : titre section 2 changé partout (sidebar + journey-steps label + H1 + frontmatter title des 2 pages X/A1 + commentaire media.ts). Slug URL `/fr/02-installer-camera/` conservé pour ne pas casser les liens.
+- **Sizing fluide images standards** (`d4fcbb6`) : `.media--image img` plafonnée à `max-height: 60vh` avec centrage horizontal (les screenshots interface ne forcent plus le scroll).
+
+### Décisions cadrées dans la session
+- Sémantique checks sidebar : « page cliquée = ✓ » (validée Thomas), pas linéaire stricte comme Laura. À reposer à Laura dans le Slack v2.5 pour confirmation.
+- Bouton Reset : sans confirmation native (action peu destructrice, réversible par navigation).
+- Slug URL section 2 : conservé `/02-installer-camera/` malgré le rename « Préparer » (pas de redirection à mettre en place).
+- Sizing images : 60vh pour les screenshots, 140px max pour les photos produit caméra.
+
+### Current state (fin session 2026-06-19)
+- Working tree clean, sur `v2-refonte`
+- HEAD `d4fcbb6` = origin/v2-refonte = preview/main
+- main = `a08e93e` (V1 + README V2.4 — pas touché cette session)
+- Preview V2.5 LIVE HTTP 200 confirmé
+- V1 prod inchangée
+- Tag `v1.0` immuable préservé
+- Message Slack v2.5 prêt à transmettre dans `docs-projet/slack-message-laura-v2.5.md`
+
+### What to do next session
+1. Récupérer le **retour Laura sur V2.5** (les checks ✓/●/○ s'affichent enfin, nav X/A1 corrigée, 5 visuels intégrés)
+2. **Question subsidiaire à Laura** : préfère-t-elle la sémantique « page cliquée » qu'on a gardée, ou la sémantique linéaire stricte de son brief V3 ? (cf. Slack v2.5)
+3. Suivi Thomas : confirmer que le sizing images est OK après hard refresh navigateur (l'image lui paraissait encore trop grosse — probable cache)
+4. Si Laura valide V2.5 → **Phase E** : merge v2-refonte → main, tag v2.0, suppression du repo preview, MAJ finale README
+5. En suspens : 6 questions structurantes audit V2.1 + URL support « améliorer qualité capture »
+
+## Previous session: 2026-06-15 (V2.4 — gamification Phase J + enrichissement bienvenue)
 
 ### What was accomplished (V2.4)
 - **Phase J.1 — Jauge de progression** : `data/journey-steps.ts` (source de vérité 12 sections), `JourneyProgress.vue` (jauge sidebar via slot `sidebar-nav-before`), `JourneyTracker.vue` (marqueur invisible inséré dans 21 pages, marque la section terminée au mount via localStorage), Layout custom dans `theme/index.ts`
