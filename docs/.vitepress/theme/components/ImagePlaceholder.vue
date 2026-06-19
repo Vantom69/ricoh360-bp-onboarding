@@ -6,14 +6,21 @@ const props = defineProps<{
   id: string
   caption?: string
   alt?: string
+  variant?: string
 }>()
 
 const entry = computed(() => media[props.id])
 const isIntegrated = computed(() => entry.value?.status === 'integrated' && entry.value?.url)
+
+const figureClass = computed(() => [
+  'media',
+  'media--image',
+  props.variant ? `media--${props.variant}` : null,
+])
 </script>
 
 <template>
-  <figure v-if="entry" class="media media--image">
+  <figure v-if="entry" :class="figureClass">
     <img
       v-if="isIntegrated"
       :src="entry.url"

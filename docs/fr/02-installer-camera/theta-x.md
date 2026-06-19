@@ -13,7 +13,7 @@ next:
 
 # 2. Installer votre RICOH THETA X
 
-<ImagePlaceholder id="media:theta-x-product" />
+<ImagePlaceholder id="media:theta-x-product" variant="product" />
 
 <JourneyStep
   number="2A"

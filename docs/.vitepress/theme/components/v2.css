@@ -289,6 +289,16 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
+/* Variante 'product' : visuel produit (photo caméra), taille contenue et centrée */
+.media--product img {
+  max-width: 280px;
+  margin: 0 auto;
+  box-shadow: none;
+  border-radius: var(--radius-md);
+}
+.media--product .media__caption {
+  text-align: center;
+}
 .media--missing {
   padding: var(--space-4);
   background: #fff5f5;
